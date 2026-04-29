@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>금양중학교 3학년 영어 분석 | 영어쑥쑥어학원</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:    #1E2D3D;
+  --slate:  #2F4A65;
+  --steel:  #607B94;
+  --gold:   #B8934A;
+  --gold-lt:#F2E6CC;
+  --cream:  #F6F3ED;
+  --panel:  #EDF0F5;
+  --rule:   #C8D2DD;
+  --white:  #FFFFFF;
+  --dh: #7A3A3A; --dh-bg: #F5EBEB;
+  --dm: #6B5A28; --dm-bg: #F5F0E2;
+  --dl: #2E6644; --dl-bg: #E8F3EE;
+  --a-dial: #3D6498;
+  --a-text: #4A7A5E;
+  --a-voc:  #7A5A94;
+  --a-gram: #8A6238;
+  --a-writ: #4A7A8A;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans KR',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65}
+
+/* HEADER */
+.hdr{background:var(--ink);position:sticky;top:0;z-index:100;box-shadow:0 2px 24px rgba(0,0,0,.28)}
+.hdr-i{max-width:1120px;margin:0 auto;padding:13px 24px;display:flex;align-items:center;justify-content:space-between;border-left:4px solid var(--gold)}
+.logo-main{font-size:17px;font-weight:900;color:var(--gold);letter-spacing:-.4px}
+.logo-sub{font-size:10px;color:#6A8FA8;letter-spacing:1px;font-weight:300;margin-top:1px}
+.hdr-badge{background:rgba(184,147,74,.14);border:1px solid rgba(184,147,74,.4);color:var(--gold);padding:4px 13px;border-radius:20px;font-size:11px;font-weight:500}
+
+/* HERO */
+.hero{background:linear-gradient(135deg,#0C1B2A 0%,var(--slate) 100%);padding:50px 24px 42px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-70px;right:-50px;width:320px;height:320px;border-radius:50%;background:rgba(184,147,74,.07);pointer-events:none}
+.hero-i{max-width:1120px;margin:0 auto;position:relative;z-index:1}
+.hero-tag{display:inline-block;background:rgba(184,147,74,.18);border:1px solid rgba(184,147,74,.45);color:var(--gold);font-size:11px;padding:4px 13px;border-radius:4px;letter-spacing:1px;font-weight:500;margin-bottom:14px;animation:fadeUp .6s ease both}
+.hero-title{font-family:'Noto Serif KR',serif;font-size:clamp(24px,5vw,40px);font-weight:700;color:var(--white);line-height:1.25;margin-bottom:9px;animation:fadeUp .6s .1s ease both}
+.hero-title span{color:var(--gold)}
+.hero-sub{font-size:13px;color:#7AAABB;font-weight:300;animation:fadeUp .6s .2s ease both}
+.hero-cards{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px;animation:fadeUp .6s .3s ease both}
+.hc{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:10px;padding:14px 18px;min-width:100px;text-align:center;backdrop-filter:blur(4px);transition:transform .2s,background .2s;cursor:default}
+.hc:hover{transform:translateY(-2px);background:rgba(255,255,255,.12)}
+.hc-val{font-size:22px;font-weight:900;color:var(--white);display:block}
+.hc-val.gold{color:var(--gold)}
+.hc-lab{font-size:10px;color:#7AAABB;margin-top:2px;font-weight:300}
+
+/* LAYOUT */
+.main{max-width:1120px;margin:0 auto;padding:40px 24px 80px}
+
+/* SECTION HEAD */
+.sh{display:flex;align-items:center;gap:10px;margin-bottom:18px;margin-top:50px}
+.sh:first-child{margin-top:0}
+.sh-bar{width:4px;height:22px;background:var(--gold);border-radius:2px;flex-shrink:0}
+.sh-title{font-size:17px;font-weight:700;color:var(--ink)}
+.sh-rule{flex:1;height:1px;background:var(--rule)}
+
+/* CARDS */
+.cards-4{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}
+.cards-5{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
+@media(max-width:720px){.cards-4,.cards-5{grid-template-columns:repeat(2,1fr)}}
+.sc{background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:16px 15px;border-top:3px solid var(--slate);transition:box-shadow .2s}
+.sc:hover{box-shadow:0 4px 18px rgba(0,0,0,.08)}
+.sc-val{font-size:26px;font-weight:900;color:var(--ink)}
+.sc-lab{font-size:11px;color:var(--steel);margin-top:4px}
+.sc.acc{border-top-color:var(--gold)}.sc.acc .sc-val{color:var(--gold)}
+
+/* SCORE BARS */
+.sw{background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:26px 30px;margin-bottom:13px}
+.sr{display:flex;align-items:center;gap:14px;margin-bottom:14px}
+.sr:last-child{margin-bottom:0}
+.sr-lbl{font-size:12px;color:var(--steel);width:86px;flex-shrink:0}
+.sr-bg{flex:1;height:10px;background:var(--panel);border-radius:99px;overflow:hidden}
+.sr-fill{height:100%;border-radius:99px;transition:width 1.3s cubic-bezier(.23,1,.32,1)}
+.sr-pct{font-size:12px;font-weight:700;width:42px;text-align:right;flex-shrink:0}
+
+/* BADGES */
+.badge{display:inline-block;padding:3px 9px;border-radius:99px;font-size:11px;font-weight:700}
+.badge.dh{background:var(--dh-bg);color:var(--dh)}
+.badge.dm{background:var(--dm-bg);color:var(--dm)}
+.badge.dl{background:var(--dl-bg);color:var(--dl)}
+.badge.dial{background:rgba(61,100,152,.12);color:var(--a-dial)}
+.badge.text{background:rgba(74,122,94,.12);color:var(--a-text)}
+.badge.voc{background:rgba(122,90,148,.12);color:var(--a-voc)}
+.badge.gram{background:rgba(138,98,56,.12);color:var(--a-gram)}
+.badge.writ{background:rgba(74,122,138,.12);color:var(--a-writ)}
+
+/* CHART GRID */
+.cg{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+@media(max-width:700px){.cg{grid-template-columns:1fr}}
+.cb{background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:20px 18px 16px}
+.ct{font-size:12.5px;font-weight:700;color:var(--slate);margin-bottom:16px;padding-bottom:9px;border-bottom:1px solid var(--panel)}
+
+/* BAR CHART */
+.bc{display:flex;flex-direction:column;gap:9px}
+.br{display:flex;align-items:center;gap:9px}
+.bl{font-size:11.5px;color:var(--steel);width:76px;flex-shrink:0;text-align:right}
+.bb{flex:1;height:22px;background:var(--panel);border-radius:4px;overflow:hidden}
+.bf{height:100%;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:7px;font-size:11px;font-weight:700;color:white;transition:width 1.4s cubic-bezier(.23,1,.32,1);min-width:28px}
+.bn{font-size:11.5px;font-weight:700;color:var(--ink);width:32px;flex-shrink:0}
+
+/* DONUT */
+.dw{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.dl-list{display:flex;flex-direction:column;gap:9px}
+.dl-item{display:flex;align-items:center;gap:7px}
+.dl-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.dl-lbl{font-size:11.5px;color:var(--steel)}
+.dl-val{font-size:11.5px;font-weight:700;color:var(--ink);margin-left:auto;padding-left:10px}
+
+/* TABLE */
+.tw{overflow-x:auto}
+table{width:100%;border-collapse:separate;border-spacing:0;background:var(--white);border-radius:12px;overflow:hidden;border:1px solid var(--rule);font-size:12px}
+thead tr{background:var(--ink)}
+thead th{padding:11px 9px;color:var(--white);font-weight:700;text-align:center;font-size:11.5px;white-space:nowrap}
+thead th:first-child{padding-left:15px}
+tbody tr{border-bottom:1px solid var(--panel);transition:background .14s}
+tbody tr:last-child{border-bottom:none}
+tbody tr:hover{background:var(--cream)}
+tbody tr.wr{background:#FBF4F4}
+tbody tr.wt{background:#F8F5EE}
+td{padding:9px 9px;vertical-align:middle;border-bottom:1px solid var(--panel)}
+td:first-child{padding-left:15px}
+.nb{display:inline-flex;align-items:center;justify-content:center;width:30px;height:22px;border-radius:5px;font-size:11px;font-weight:700;color:white;background:var(--slate);font-family:'DM Mono',monospace}
+.nb.wr{background:var(--a-writ)}
+.pt{color:var(--steel);font-size:11.5px;line-height:1.45}
+code{display:inline-block;background:var(--panel);color:var(--slate);font-family:'DM Mono',monospace;font-size:10.5px;padding:1px 5px;border-radius:3px;margin:1px}
+
+/* POINT CARDS */
+.pl{display:flex;flex-direction:column;gap:9px}
+.pc{background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:15px 17px;display:flex;gap:13px;align-items:flex-start;border-left:4px solid var(--slate);transition:box-shadow .2s,transform .2s}
+.pc:hover{box-shadow:0 4px 14px rgba(0,0,0,.07);transform:translateX(2px)}
+.pr{font-size:10px;font-weight:900;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:white}
+.pb-title{font-size:13.5px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.pb-desc{font-size:12px;color:var(--steel);line-height:1.58}
+
+/* STRATEGY */
+.strat-card{background:var(--white);border:1px solid var(--rule);border-radius:12px;overflow:hidden;margin-bottom:14px}
+.strat-head{padding:13px 18px;font-size:13px;font-weight:700;color:var(--white);display:flex;align-items:center;gap:7px}
+.strat-body{padding:16px 18px}
+.strat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:700px){.strat-grid{grid-template-columns:1fr}}
+.strat-item{display:flex;align-items:flex-start;gap:9px;padding:10px 0;border-bottom:1px solid var(--panel);font-size:12px}
+.strat-item:last-child{border-bottom:none}
+.si-icon{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;color:white;flex-shrink:0;margin-top:1px}
+.si-txt{color:var(--steel);line-height:1.55}
+.si-txt strong{color:var(--ink)}
+.year-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-bottom:4px}
+@media(max-width:720px){.year-grid{grid-template-columns:repeat(2,1fr)}}
+.yc{background:var(--panel);border-radius:8px;padding:13px 11px}
+.yc-month{font-size:10.5px;font-weight:900;margin-bottom:5px}
+.yc-title{font-size:11.5px;font-weight:700;color:var(--ink);margin-bottom:5px}
+.yc-desc{font-size:10.5px;color:var(--steel);line-height:1.6}
+.goal-box{margin-top:12px;padding:12px 15px;border-radius:8px;border-left:3px solid var(--dl);background:var(--dl-bg)}
+
+/* DIFF METER */
+.dm-box{display:flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:18px 22px;flex-wrap:wrap;margin-top:12px}
+.dm-lbl{font-size:12px;font-weight:700;color:var(--slate);width:78px}
+.dm-stars{font-size:22px;color:var(--gold);letter-spacing:2px}
+.dm-tag{padding:5px 14px;border-radius:20px;font-size:12px;font-weight:900}
+.dm-desc{font-size:11.5px;color:var(--steel);flex:1;min-width:180px;line-height:1.6}
+
+/* INTRO BOX */
+.intro-box{background:var(--white);border:1px solid var(--rule);border-radius:10px;border-left:4px solid var(--gold);padding:18px 22px;margin-bottom:14px}
+.intro-box p{font-size:12.5px;color:var(--slate);line-height:1.8}
+
+/* ANIM */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+.fi{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.fi.vis{opacity:1;transform:translateY(0)}
+
+/* FOOTER */
+.ftr{background:var(--ink);border-top:3px solid var(--gold);padding:26px 24px;text-align:center}
+.ftr-logo{font-size:15px;font-weight:900;color:var(--gold);margin-bottom:5px}
+.ftr-sub{font-size:11px;color:#4A6A80}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="hdr">
+  <div class="hdr-i">
+    <div>
+      <div class="logo-main">영어쑥쑥어학원</div>
+      <div class="logo-sub">ENGLISH SSUKSSUK ACADEMY</div>
+    </div>
+    <span class="hdr-badge">학교 시험 분석 리포트</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-i">
+    <div class="hero-tag">2026학년도 1학기 중간고사</div>
+    <h1 class="hero-title"><span>금양중학교</span> 3학년 영어</h1>
+    <p class="hero-sub">2026년 4월 27일 실시 &nbsp;·&nbsp; 과목코드 (11) &nbsp;·&nbsp; 1교시</p>
+    <div class="hero-cards">
+      <div class="hc"><span class="hc-val">25</span><div class="hc-lab">총 문항</div></div>
+      <div class="hc"><span class="hc-val">100</span><div class="hc-lab">총 배점</div></div>
+      <div class="hc"><span class="hc-val">20</span><div class="hc-lab">선택형 문항</div></div>
+      <div class="hc"><span class="hc-val">5</span><div class="hc-lab">서논술형 문항</div></div>
+      <div class="hc"><span class="hc-val">56</span><div class="hc-lab">서논술형 배점</div></div>
+    </div>
+  </div>
+</section>
+
+<main class="main">
+
+<!-- 배점 구조 -->
+<div class="sh fi"><div class="sh-bar"></div><h2 class="sh-title">📐 배점 구조</h2><div class="sh-rule"></div></div>
+<div class="cards-5 fi">
+  <div class="sc"><div class="sc-val">5문</div><div class="sc-lab">선택형 2점 × 5 = 10점</div></div>
+  <div class="sc"><div class="sc-val">10문</div><div class="sc-lab">선택형 3점 × 10 = 30점</div></div>
+  <div class="sc"><div class="sc-val">5문</div><div class="sc-lab">선택형 4점 × 5 = 20점</div></div>
+  <div class="sc acc"><div class="sc-val">56점</div><div class="sc-lab">서논술형 합계 (5문항)</div></div>
+  <div class="sc"><div class="sc-val">100점</div><div class="sc-lab">총 배점</div></div>
+</div>
+
+<!-- 출제 분석 -->
+<div class="sh fi" style="margin-top:44px"><div class="sh-bar"></div><h2 class="sh-title">📊 출제 분석</h2><div class="sh-rule"></div></div>
+<div class="cg fi">
+
+  <!-- 난이도 도넛 -->
+  <div class="cb">
+    <div class="ct">난이도 분포 (25문항)</div>
+    <div class="dw">
+      <svg width="110" height="110" viewBox="0 0 110 110">
+        <circle cx="55" cy="55" r="40" fill="none" stroke="#EDF0F5" stroke-width="18"/>
+        <!-- 하:6문(24%) 상:8문(32%) 중:11문(44%) -->
+        <circle cx="55" cy="55" r="40" fill="none" stroke="var(--dl)" stroke-width="18"
+          stroke-dasharray="60 191" stroke-dashoffset="0" transform="rotate(-90 55 55)"/>
+        <circle cx="55" cy="55" r="40" fill="none" stroke="var(--dm)" stroke-width="18"
+          stroke-dasharray="110 141" stroke-dashoffset="-60" transform="rotate(-90 55 55)"/>
+        <circle cx="55" cy="55" r="40" fill="none" stroke="var(--dh)" stroke-width="18"
+          stroke-dasharray="80 171" stroke-dashoffset="-170" transform="rotate(-90 55 55)"/>
+        <text x="55" y="51" text-anchor="middle" font-size="13" font-weight="900" fill="var(--ink)" font-family="Noto Sans KR">25</text>
+        <text x="55" y="64" text-anchor="middle" font-size="9" fill="var(--steel)" font-family="Noto Sans KR">문항</text>
+      </svg>
+      <div class="dl-list">
+        <div class="dl-item"><div class="dl-dot" style="background:var(--dh)"></div><span class="dl-lbl">고난도 (상)</span><span class="dl-val">8문 (32%)</span></div>
+        <div class="dl-item"><div class="dl-dot" style="background:var(--dm)"></div><span class="dl-lbl">보통 (중)</span><span class="dl-val">11문 (44%)</span></div>
+        <div class="dl-item"><div class="dl-dot" style="background:var(--dl)"></div><span class="dl-lbl">기본 (하)</span><span class="dl-val">6문 (24%)</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 출제영역 바 -->
+  <div class="cb">
+    <div class="ct">출제영역별 문항 수</div>
+    <div class="bc">
+      <div class="br"><span class="bl">본문 독해</span><div class="bb"><div class="bf" style="width:56%;background:var(--a-text);">7문</div></div><span class="bn">7</span></div>
+      <div class="br"><span class="bl">서논술형</span><div class="bb"><div class="bf" style="width:40%;background:var(--a-writ);">5문</div></div><span class="bn">5</span></div>
+      <div class="br"><span class="bl">문법</span><div class="bb"><div class="bf" style="width:40%;background:var(--a-gram);">5문</div></div><span class="bn">5</span></div>
+      <div class="br"><span class="bl">대화문</span><div class="bb"><div class="bf" style="width:40%;background:var(--a-dial);">5문</div></div><span class="bn">5</span></div>
+      <div class="br"><span class="bl">어휘</span><div class="bb"><div class="bf" style="width:24%;background:var(--a-voc);">3문</div></div><span class="bn">3</span></div>
+    </div>
+  </div>
+
+  <!-- 배점 분포 -->
+  <div class="cb">
+    <div class="ct">문항유형별 배점 합계</div>
+    <div class="bc">
+      <div class="br"><span class="bl">서논술형</span><div class="bb"><div class="bf" style="width:100%;background:var(--a-writ);">56점</div></div><span class="bn">56</span></div>
+      <div class="br"><span class="bl">3점×10문</span><div class="bb"><div class="bf" style="width:75%;background:var(--a-dial);">30점</div></div><span class="bn">30</span></div>
+      <div class="br"><span class="bl">4점×5문</span><div class="bb"><div class="bf" style="width:50%;background:var(--a-gram);">20점</div></div><span class="bn">20</span></div>
+      <div class="br"><span class="bl">2점×5문</span><div class="bb"><div class="bf" style="width:25%;background:var(--a-text);">10점</div></div><span class="bn">10</span></div>
+    </div>
+  </div>
+
+  <!-- 영역별 배점 비중 -->
+  <div class="cb">
+    <div class="ct">영역별 배점 비중</div>
+    <div class="bc">
+      <div class="br"><span class="bl">서논술형</span><div class="bb"><div class="bf" style="width:56%;background:var(--a-writ);">56%</div></div><span class="bn">56점</span></div>
+      <div class="br"><span class="bl">본문 독해</span><div class="bb"><div class="bf" style="width:21%;background:var(--a-text);">21점</div></div><span class="bn">21점</span></div>
+      <div class="br"><span class="bl">문법</span><div class="bb"><div class="bf" style="width:14%;background:var(--a-gram);">14점</div></div><span class="bn">14점</span></div>
+      <div class="br"><span class="bl">대화문</span><div class="bb"><div class="bf" style="width:11%;background:var(--a-dial);">11점</div></div><span class="bn">11점</span></div>
+      <div class="br"><span class="bl">어휘</span><div class="bb"><div class="bf" style="width:9%;background:var(--a-voc);">9점</div></div><span class="bn">9점</span></div>
+    </div>
+  </div>
+
+</div><!-- /cg -->
+
+<!-- 종합 난이도 -->
+<div class="dm-box fi">
+  <span class="dm-lbl">종합 난이도</span>
+  <span class="dm-stars">★★★★☆</span>
+  <span class="dm-tag" style="background:var(--dm-bg);color:var(--dm);">중상 (4/5)</span>
+  <p class="dm-desc">서논술형이 56점(56%)로 압도적으로 높고, 수동태 전환·관계대명사·분사 등 고급 문법의 영작 출제가 많습니다. 선택형은 평이하나 서논술형에서 점수 변별이 매우 크게 나타납니다.</p>
+</div>
+
+<!-- 핵심 출제 포인트 -->
+<div class="sh fi" style="margin-top:48px"><div class="sh-bar"></div><h2 class="sh-title">🎯 시험 핵심 출제 포인트</h2><div class="sh-rule"></div></div>
+<div class="pl fi">
+  <div class="pc" style="border-left-color:var(--dh)">
+    <div class="pr" style="background:var(--dh)">1</div>
+    <div>
+      <div class="pb-title">수동태 전환 영작 <span class="badge dh">★★★ 고난도</span></div>
+      <div class="pb-desc">서논술형4 전체가 능동태→수동태 전환 영작(각 5점). <code>be동사 + p.p.</code> 형태, 조동사 수동태 <code>must be followed</code>, 미래 수동태 <code>will be changed</code> 패턴. 시제·주어 일치가 채점 핵심.</div>
+    </div>
+  </div>
+  <div class="pc" style="border-left-color:var(--dh)">
+    <div class="pr" style="background:var(--dh)">2</div>
+    <div>
+      <div class="pb-title">관계대명사 / 관계부사 (15번) <span class="badge dh">★★★ 고난도</span></div>
+      <div class="pb-desc">관계대명사 <code>who / which / that</code>과 관계부사 <code>where / when</code> 구분. 선행사의 종류에 따른 올바른 관계사 선택 + 절 어순. 4점 문항으로 고득점 변별 포인트.</div>
+    </div>
+  </div>
+  <div class="pc" style="border-left-color:var(--dh)">
+    <div class="pr" style="background:var(--dh)">3</div>
+    <div>
+      <div class="pb-title">분사(현재/과거) 형용사 역할 (9번) <span class="badge dh">★★★ 고난도</span></div>
+      <div class="pb-desc">부사 vs 형용사 역할 구별. <code>easily / suddenly / useful / helpful / carefully</code> 형용사·부사 혼동 오류 식별. 3점 문항이지만 헷갈리는 유형.</div>
+    </div>
+  </div>
+  <div class="pc" style="border-left-color:var(--dm)">
+    <div class="pr" style="background:var(--dm)">4</div>
+    <div>
+      <div class="pb-title">서논술형5 — It ~ to 가주어 구문 영작 <span class="badge dm">★★☆ 보통</span></div>
+      <div class="pb-desc"><code>It is + 형용사 + to부정사</code> 구문으로 한국어 문장 영작 (각 5점). <em>"It is wise to eat healthy food."</em> / <em>"It is impossible for her to get up early."</em> 의미상 주어 <code>for + 목적격</code> 포함 여부 주의.</div>
+    </div>
+  </div>
+  <div class="pc" style="border-left-color:var(--dm)">
+    <div class="pr" style="background:var(--dm)">5</div>
+    <div>
+      <div class="pb-title">어법상 알맞은 문장 (4번, 20번) <span class="badge dm">★★☆ 보통</span></div>
+      <div class="pb-desc">4번: 병렬구조·수일치·관계절 오류 식별 (4점). 20번: 수량 표현 수일치 — <code>some of + 복수명사 + are</code>, <code>three-fifth of</code>, <code>a quarter of + 단수/복수</code> 판별 (4점). 수일치 규칙 완전 암기 필요.</div>
+    </div>
+  </div>
+  <div class="pc" style="border-left-color:var(--a-text)">
+    <div class="pr" style="background:var(--a-text)">6</div>
+    <div>
+      <div class="pb-title">마시멜로 챌린지 & 꿀벌 지문 독해 <span class="badge text">본문</span></div>
+      <div class="pb-desc">4~8번 마시멜로 챌린지 지문(내용일치·어휘·영영정의·주제). 16~19번 꿀벌 실종 지문(빈칸·동사변형·내용일치·CANNOT 질문). 두 지문 모두 세부 정보와 주제 파악이 핵심.</div>
+    </div>
+  </div>
+</div>
+
+<!-- 문항별 상세 분석 -->
+<div class="sh fi" style="margin-top:48px"><div class="sh-bar"></div><h2 class="sh-title">📋 문항별 상세 분석</h2><div class="sh-rule"></div></div>
+<div class="tw fi">
+<table>
+  <thead>
+    <tr>
+      <th>번호</th><th>배점</th><th>난이도</th><th>출제영역</th>
+      <th style="text-align:left">출제 포인트 및 핵심 문형</th>
+    </tr>
+  </thead>
+  <tbody id="qtbl"></tbody>
+</table>
+</div>
+
+<!-- 대응 전략 -->
+<div class="sh fi" style="margin-top:48px"><div class="sh-bar"></div><h2 class="sh-title">✅ 대응 전략</h2><div class="sh-rule"></div></div>
+
+<div class="intro-box fi">
+  <p>금양중학교 3학년 영어는 <strong>서논술형 비중이 56점으로 전국 평균보다 현저히 높습니다.</strong> 선택형을 모두 맞혀도 44점에 불과하므로, <em>영작 실력이 곧 등급을 결정</em>합니다. 수동태·관계대명사·가주어 구문의 정확한 영작이 핵심 과제입니다.</p>
+</div>
+
+<!-- 단기 -->
+<div class="strat-card fi">
+  <div class="strat-head" style="background:var(--dh)">🔴 &nbsp;단기 집중 — 1개월 플랜 <span style="font-size:11px;font-weight:400;opacity:.85">(서논술형 56점 공략)</span></div>
+  <div class="strat-body">
+    <div class="strat-grid">
+      <div class="strat-item">
+        <div class="si-icon" style="background:var(--dh)">1주</div>
+        <div class="si-txt"><strong>수동태 전환 집중 훈련</strong><br>능동→수동 30문장 매일 작성. <code>be + p.p.</code> / <code>조동사 + be + p.p.</code> / <code>will be + p.p.</code> 3가지 패턴 완전 암기. 서논술형4 기출 유형 반복.</div>
+      </div>
+      <div class="strat-item">
+        <div class="si-icon" style="background:var(--dh)">1주</div>
+        <div class="si-txt"><strong>It ~ to 가주어 구문 영작</strong><br><code>It is + 형용사 + (for 목적격) + to V</code> 패턴 20문장 훈련. 의미상 주어 포함/생략 조건 구분. 서논술형5 기출 반복.</div>
+      </div>
+      <div class="strat-item">
+        <div class="si-icon" style="background:var(--dh)">2주</div>
+        <div class="si-txt"><strong>관계대명사 / 관계부사 정리</strong><br>선행사 종류별 who/which/that/where/when 구분표 암기. 관계절 어순 훈련 20문장. 15번 유형 집중 풀이.</div>
+      </div>
+      <div class="strat-item">
+        <div class="si-icon" style="background:var(--dh)">2주</div>
+        <div class="si-txt"><strong>수일치 규칙 완전 정복</strong><br>분수·퍼센트·most/some of 표현의 수일치 규칙 암기. 20번 유형 10문제 반복. 주어-동사 일치 오류 교정 훈련.</div>
+      </div>
+      <div class="strat-item">
+        <div class="si-icon" style="background:var(--dh)">3주</div>
+        <div class="si-txt"><strong>서논술형 조건 영작 실전</strong><br>단어 수·특정 단어 포함 조건 체크리스트 습관화. 서논술형 1~5번 유형 혼합 풀이 주 2회. 틀린 문장 3회 다시 쓰기.</div>
+      </div>
+      <div class="strat-item">
+        <div class="si-icon" style="background:var(--dh)">4주</div>
+        <div class="si-txt"><strong>모의 서논술형 실전 테스트</strong><br>실제 시험과 동일한 조건으로 서논술형 5문항 시간 제한 풀이. 채점 후 오류 유형 분석 및 교정. 목표: 서논술형 45점 이상.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 중장기 -->
+<div class="strat-card fi">
+  <div class="strat-head" style="background:var(--dl)">🟢 &nbsp;중장기 보완 — 1년 플랜 <span style="font-size:11px;font-weight:400;opacity:.85">(자유 영작 역량 완성)</span></div>
+  <div class="strat-body">
+    <div class="year-grid">
+      <div class="yc" style="border-top:3px solid var(--dl)">
+        <div class="yc-month" style="color:var(--dl)">1~3개월</div>
+        <div class="yc-title">핵심 문법 완성</div>
+        <div class="yc-desc">수동태·관계사·가주어 구문 완전 습득. 매주 문법 1단원 + 영작 10문장. 오류 교정 노트 작성 습관화.</div>
+      </div>
+      <div class="yc" style="border-top:3px solid #4A7A8A">
+        <div class="yc-month" style="color:#4A7A8A">4~6개월</div>
+        <div class="yc-title">단락 영작 확장</div>
+        <div class="yc-desc">5~7문장 단락 영작 주 2회. 주제문+근거+마무리 3단 구조 훈련. 교사 첨삭 피드백으로 오류 누적 방지.</div>
+      </div>
+      <div class="yc" style="border-top:3px solid var(--a-gram)">
+        <div class="yc-month" style="color:var(--a-gram)">7~9개월</div>
+        <div class="yc-title">고급 문형 도입</div>
+        <div class="yc-desc">분사구문·접속사·도치 등 고급 문형으로 확장. 서논술형 만점 표현 다양화. 고등학교 문법 기초 예습 시작.</div>
+      </div>
+      <div class="yc" style="border-top:3px solid var(--slate)">
+        <div class="yc-month" style="color:var(--slate)">10~12개월</div>
+        <div class="yc-title">자유 영작 완성</div>
+        <div class="yc-desc">조건 없는 자유 주제 영작. 기말·수행평가 서술형 만점 목표. 고등 영어 서술형 기초 완성.</div>
+      </div>
+    </div>
+    <div class="goal-box">
+      <span style="font-size:12px;font-weight:700;color:var(--dl)">🎯 1년 후 목표 &nbsp;</span>
+      <span style="font-size:12px;color:var(--steel)">서논술형 50점 이상 안정적 달성 → 문법 오류 없이 자신의 생각을 영어로 표현 가능. 고등학교 1학년 영어 서술형 대비 완성.</span>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer class="ftr">
+  <div class="ftr-logo">영어쑥쑥어학원</div>
+  <div class="ftr-sub">금양중학교 3학년 영어 &nbsp;|&nbsp; 2026학년도 1학기 중간고사 분석 리포트<br>본 자료의 저작권은 영어쑥쑥어학원에 있습니다.</div>
+</footer>
+
+<script>
+const Q = [
+  // [번호, 배점, 난이도, 영역cls, 영역명, 출제포인트]
+  ['서1-1', 4, 'dm', 'dial', '대화문', "Kate 일기 오류 수정 영작 ①: 'turning on lights' → 'turning off lights' (Earth Hour 내용 불일치 교정)"],
+  ['서1-2', 4, 'dm', 'dial', '대화문', "Kate 일기 오류 수정 영작 ②: 'looked it up on the dictionary' → 'looked it up on the Internet' (대화 내용 기반 교정)"],
+  [1, 2, 'dl', 'dial', '대화문', "밑줄 친 (A)의 기능 — 걱정 표현하기: <code>I'm worried about our planet.</code>"],
+  [2, 2, 'dl', 'text', '본문', "환경 보호 설문 내용 어색한 항목 — 'I drink water with paper cups' (환경에 해로움)"],
+  [3, 3, 'dm', 'dial', '대화문', "짝지어진 대화 어색한 것 — ③ Can I ask you something? / Of course. How is everything? (응답 어색)"],
+  [4, 4, 'dh', 'gram', '문법', "밑줄 친 (A)~(E) 어법 오류 — ④ (D)의 divide는 agreed와 병렬구조이므로 divided로 고쳐야 한다"],
+  [5, 2, 'dl', 'text', '본문', "밑줄 친 ⓐ·ⓒ 의미 — ⓐ example(예시), ⓒ a good idea (마시멜로 챌린지 문맥)"],
+  [6, 3, 'dm', 'voc', '어휘', "밑줄 친 ⓓ 영영 풀이 — stuck: difficult or impossible to move from a position (⑤)"],
+  [7, 2, 'dl', 'text', '본문', "내용 일치하지 않는 것 — ④ A팀은 스파게티 면을 묶은 다음 테이프로 감았다 (순서 오류)"],
+  [8, 3, 'dm', 'text', '본문', "주제를 가장 잘 이해한 학생 — ③ 토치: 마시멜로 챌린지는 문제 해결에 좋다"],
+  [9, 3, 'dh', 'gram', '문법', "밑줄 친 부분 어법상 알맞은 것 — ⑤ provide better <u>care</u> for the poor (형용사·부사 혼동 오류 식별)"],
+  [10, 2, 'dl', 'dial', '대화문', "대화 빈칸 (A) — ② I'm sorry to hear that. (팀이 졌다는 소식에 위로)"],
+  [11, 3, 'dm', 'dial', '대화문', "대화 내용 일치 — ④ Andy's team lost by one point. (80 대 79)"],
+  [12, 3, 'dh', 'text', '본문', "문단 순서 배열 — ④ (C)-(A)-(B): 건물 시작→시도 반복→비교"],
+  [13, 3, 'dh', 'voc', '어휘', "빈칸에 들어갈 수 없는 단어 — ③ climate (cause/ancient/harmful/string은 가능, climate는 불가)"],
+  [14, 3, 'dm', 'text', '본문', "우리말 올바른 영작이 아닌 것 — ① 달이 구름 뒤로 사라졌다: 'appeared behind' → 'disappeared behind'"],
+  [15, 4, 'dh', 'gram', '문법', "빈칸 같은 것끼리 짝지어진 것 — ② ⓑⓒⓖ (관계대명사 that / 접속사 that / 관계대명사 that 구분)"],
+  [16, 4, 'dh', 'text', '본문', "빈칸 (A) — ② we cannot see them around us often (꿀벌이 줄어드는 표현)"],
+  [17, 3, 'dm', 'gram', '문법', "괄호 동사 어법에 맞게 변형 — ④ ⓑ: eat→be eaten / ⓔ: slow→slows (수동태·수일치)"],
+  [18, 4, 'dh', 'text', '본문', "밑줄 친 (B) 의미 — ⑤ 꽃가루 수분 과정에서 벌의 도움이 필요하다"],
+  [19, 3, 'dm', 'text', '본문', "CANNOT be answered — ② How does honey taste? (지문에 맛의 종류 언급 없음)"],
+  [20, 4, 'dh', 'gram', '문법', "어법상 알맞은 것 — ③ A quarter of the juice is spilled by Amy (수량 표현 수일치)"],
+  ['서2-1', 3, 'dm', 'writ', '서논술형', "지문 근거 영작 ①: 7단어 — 벌의 역할(꿀 생산·수분) 관련 문장 작성"],
+  ['서2-2', 3, 'dm', 'writ', '서논술형', "지문 근거 영작 ②: 11단어 — 벌 보호 방법(꽃·나무 심기, 화학물질 사용 중단) 관련 문장"],
+  ['서3', 6, 'dm', 'writ', '서논술형', "그림 묘사 영작 — <code>use</code>·<code>transportation</code> 필수 사용, 5단어: <em>We can use less transportation.</em>"],
+  ['서4-1', 5, 'dh', 'writ', '서논술형', "수동태 전환 영작 — Teenagers will change the future. → <em>The future will be changed by teenagers.</em>"],
+  ['서4-2', 5, 'dh', 'writ', '서논술형', "수동태 전환 영작 — The students must follow the class rules. → <em>The class rules must be followed by the students.</em>"],
+  ['서5-1', 5, 'dm', 'writ', '서논술형', "가주어 It ~ to 영작 ①: 9단어 — <em>It is wise to eat healthy food.</em> (wise, healthy 필수)"],
+  ['서5-2', 5, 'dh', 'writ', '서논술형', "가주어 It ~ to 영작 ②: 9단어 — <em>It is impossible for her to get up early.</em> (get up 필수, 의미상 주어 포함)"],
+];
+
+const diffMap = {
+  dh: {cls:'dh', label:'상 ★★★'},
+  dm: {cls:'dm', label:'중 ★★☆'},
+  dl: {cls:'dl', label:'하 ★☆☆'},
+};
+const areaCls = {dial:'dial',text:'text',voc:'voc',gram:'gram',writ:'writ'};
+
+const tbody = document.getElementById('qtbl');
+Q.forEach(([num,pts,diff,area,areaName,point]) => {
+  const isW = typeof num === 'string';
+  const d = diffMap[diff];
+  const tr = document.createElement('tr');
+  if(isW) tr.className='wt';
+  tr.innerHTML=`
+    <td><span class="nb${isW?' wr':''}">${num}</span></td>
+    <td style="text-align:center;font-weight:700">${pts}점</td>
+    <td style="text-align:center"><span class="badge ${d.cls}">${d.label}</span></td>
+    <td style="text-align:center"><span class="badge ${areaCls[area]}">${areaName}</span></td>
+    <td class="pt">${point}</td>`;
+  tbody.appendChild(tr);
+});
+
+// Scroll fade-in
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:.07});
+document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
+
+// Animate bars
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.sr-fill,.bf').forEach(f=>{
+    const w=f.style.width; f.style.width='0';
+    setTimeout(()=>{f.style.width=w},250);
+  });
+});
+</script>
+</body>
+</html>
