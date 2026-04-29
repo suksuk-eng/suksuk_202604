@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>부곡중학교 3학년 영어 분석 | 영어쑥쑥어학원</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink:    #1C2B3A;
+    --slate:  #3B5068;
+    --steel:  #6B8299;
+    --gold:   #C9A84C;
+    --gold-lt:#F0E4C0;
+    --cream:  #F7F4EE;
+    --panel:  #EEF1F5;
+    --rule:   #C5CDD8;
+    --white:  #FFFFFF;
+
+    --diff-high: #8C4A4A;
+    --diff-mid:  #7A6830;
+    --diff-low:  #3A6B50;
+    --diff-high-bg: #F5ECEC;
+    --diff-mid-bg:  #F5F2E8;
+    --diff-low-bg:  #ECF2EE;
+
+    --area-dialogue: #4A6FA5;
+    --area-text:     #5C8A6E;
+    --area-vocab:    #8E6FA3;
+    --area-grammar:  #B07D52;
+    --area-written:  #6A8FA0;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: var(--ink);
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.25);
+  }
+  .site-header-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 4px solid var(--gold);
+  }
+  .logo { display: flex; flex-direction: column; gap: 2px; }
+  .logo-main { font-size: 18px; font-weight: 900; color: var(--gold); letter-spacing: -0.5px; }
+  .logo-sub  { font-size: 10px; color: #7A9BB5; letter-spacing: 1px; font-weight: 300; }
+  .header-badge {
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.4);
+    color: var(--gold);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(135deg, #0D1E2E 0%, var(--slate) 100%);
+    padding: 52px 24px 44px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.08);
+    pointer-events: none;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: 30%;
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background: rgba(201,168,76,0.05);
+    pointer-events: none;
+  }
+  .hero-inner { max-width: 1100px; margin: 0 auto; position: relative; z-index: 1; }
+  .hero-tag {
+    display: inline-block;
+    background: rgba(201,168,76,0.2);
+    border: 1px solid rgba(201,168,76,0.5);
+    color: var(--gold);
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-bottom: 14px;
+    animation: fadeUp 0.6s ease both;
+  }
+  .hero-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: clamp(26px, 5vw, 42px);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.25;
+    margin-bottom: 10px;
+    animation: fadeUp 0.6s 0.1s ease both;
+  }
+  .hero-title span { color: var(--gold); }
+  .hero-sub {
+    font-size: 14px;
+    color: #8BAFC8;
+    font-weight: 300;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+  .hero-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 32px;
+    animation: fadeUp 0.6s 0.3s ease both;
+  }
+  .hero-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 10px;
+    padding: 14px 20px;
+    min-width: 110px;
+    text-align: center;
+    backdrop-filter: blur(4px);
+    transition: transform 0.2s, background 0.2s;
+  }
+  .hero-card:hover { transform: translateY(-2px); background: rgba(255,255,255,0.12); }
+  .hero-card-val { font-size: 22px; font-weight: 900; color: var(--white); display: block; }
+  .hero-card-val.gold { color: var(--gold); }
+  .hero-card-lab { font-size: 10px; color: #8BAFC8; margin-top: 2px; font-weight: 300; }
+
+  /* ── LAYOUT ── */
+  .main { max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; }
+
+  /* ── SECTION HEADER ── */
+  .sec-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 52px;
+  }
+  .sec-head:first-child { margin-top: 0; }
+  .sec-bar { width: 4px; height: 24px; background: var(--gold); border-radius: 2px; flex-shrink: 0; }
+  .sec-title { font-size: 18px; font-weight: 700; color: var(--ink); }
+  .sec-rule { flex: 1; height: 1px; background: var(--rule); }
+
+  /* ── CARDS GRID ── */
+  .cards-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .cards-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+  @media(max-width:700px) {
+    .strat-inner  { grid-template-columns: 1fr !important; }
+    .year-grid    { grid-template-columns: 1fr 1fr !important; }
+    .cards-3, .cards-4 { grid-template-columns: repeat(2,1fr); }
+  }
+  @media(max-width:480px) {
+    .year-grid    { grid-template-columns: 1fr !important; }
+  }
+
+  .stat-card {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 18px 16px;
+    border-top: 3px solid var(--slate);
+    transition: box-shadow 0.2s;
+  }
+  .stat-card:hover { box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+  .stat-card-val { font-size: 28px; font-weight: 900; color: var(--ink); }
+  .stat-card-lab { font-size: 11px; color: var(--steel); margin-top: 4px; font-weight: 400; }
+  .stat-card.accent { border-top-color: var(--gold); }
+  .stat-card.accent .stat-card-val { color: var(--gold); }
+
+  /* ── SCORE METER ── */
+  .score-wrap {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 28px 32px;
+    margin-bottom: 14px;
+  }
+  .score-row { display: flex; align-items: center; gap: 16px; margin-bottom: 16px; }
+  .score-label { font-size: 13px; color: var(--steel); width: 90px; flex-shrink: 0; }
+  .score-bar-bg {
+    flex: 1;
+    height: 10px;
+    background: var(--panel);
+    border-radius: 99px;
+    overflow: hidden;
+  }
+  .score-bar-fill {
+    height: 100%;
+    border-radius: 99px;
+    transition: width 1.2s cubic-bezier(0.23,1,0.32,1);
+  }
+  .score-pct { font-size: 13px; font-weight: 700; width: 40px; text-align: right; flex-shrink: 0; }
+
+  /* ── DIFF / AREA BADGES ── */
+  .badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 99px;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+  }
+  .badge.high   { background: var(--diff-high-bg); color: var(--diff-high); }
+  .badge.mid    { background: var(--diff-mid-bg);  color: var(--diff-mid); }
+  .badge.low    { background: var(--diff-low-bg);  color: var(--diff-low); }
+  .badge.dialogue { background: rgba(74,111,165,0.12); color: var(--area-dialogue); }
+  .badge.text     { background: rgba(92,138,110,0.12); color: var(--area-text); }
+  .badge.vocab    { background: rgba(142,111,163,0.12); color: var(--area-vocab); }
+  .badge.grammar  { background: rgba(176,125,82,0.12); color: var(--area-grammar); }
+  .badge.written  { background: rgba(106,143,160,0.12); color: var(--area-written); }
+
+  /* ── CHART GRID ── */
+  .chart-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media(max-width:700px) { .chart-grid { grid-template-columns: 1fr; } }
+  .chart-box {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 22px 20px 18px;
+  }
+  .chart-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--slate);
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--panel);
+  }
+
+  /* Bar chart */
+  .bar-chart { display: flex; flex-direction: column; gap: 10px; }
+  .bar-row { display: flex; align-items: center; gap: 10px; }
+  .bar-label { font-size: 12px; color: var(--steel); width: 72px; flex-shrink: 0; text-align: right; }
+  .bar-bg { flex: 1; height: 22px; background: var(--panel); border-radius: 4px; overflow: hidden; position: relative; }
+  .bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    display: flex; align-items: center; justify-content: flex-end;
+    padding-right: 8px;
+    font-size: 11px; font-weight: 700; color: white;
+    transition: width 1.4s cubic-bezier(0.23,1,0.32,1);
+    min-width: 32px;
+  }
+  .bar-count { font-size: 12px; color: var(--ink); font-weight: 700; width: 30px; flex-shrink: 0; }
+
+  /* Donut chart */
+  .donut-wrap { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; }
+  .donut-svg { flex-shrink: 0; }
+  .donut-legend { display: flex; flex-direction: column; gap: 10px; }
+  .donut-item { display: flex; align-items: center; gap: 8px; }
+  .donut-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+  .donut-item-label { font-size: 12px; color: var(--steel); }
+  .donut-item-val   { font-size: 12px; font-weight: 700; color: var(--ink); margin-left: auto; padding-left: 12px; }
+
+  /* ── QUESTION TABLE ── */
+  .table-wrap { overflow-x: auto; }
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--rule);
+    font-size: 12.5px;
+  }
+  thead tr { background: var(--ink); }
+  thead th {
+    padding: 12px 10px;
+    color: var(--white);
+    font-weight: 700;
+    text-align: center;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  thead th:first-child { border-radius: 12px 0 0 0; padding-left: 16px; }
+  thead th:last-child  { border-radius: 0 12px 0 0; }
+  tbody tr { border-bottom: 1px solid var(--panel); transition: background 0.15s; }
+  tbody tr:last-child { border-bottom: none; }
+  tbody tr:hover { background: var(--cream); }
+  tbody tr.written-row { background: #FAFAF6; }
+  tbody tr.wrong-row { background: #FFF8F8; }
+  tbody tr.partial-row { background: #FFFCF5; }
+  td {
+    padding: 10px 10px;
+    vertical-align: middle;
+    color: var(--ink);
+    border-bottom: 1px solid var(--panel);
+  }
+  td:first-child { padding-left: 16px; }
+  .num-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px; height: 24px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    background: var(--slate);
+    font-family: 'DM Mono', monospace;
+  }
+  .num-badge.written { background: var(--area-written); }
+  .stars { color: var(--gold); font-size: 10px; letter-spacing: -1px; }
+  .result-ok   { color: #3A6B50; font-size: 16px; }
+  .result-fail { color: #8C4A4A; font-size: 16px; }
+  .result-part { color: #7A6830; font-size: 14px; font-weight: 700; }
+  .point-text  { color: var(--slate); font-size: 12px; line-height: 1.4; }
+
+  /* ── POINT CARDS ── */
+  .point-list { display: flex; flex-direction: column; gap: 10px; }
+  .point-card {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 16px 18px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    border-left: 4px solid var(--slate);
+    transition: box-shadow 0.2s, transform 0.2s;
+  }
+  .point-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); transform: translateX(2px); }
+  .point-rank {
+    font-size: 11px; font-weight: 900;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: white;
+  }
+  .point-body { flex: 1; }
+  .point-title { font-size: 14px; font-weight: 700; color: var(--ink); margin-bottom: 4px; }
+  .point-desc  { font-size: 12px; color: var(--steel); line-height: 1.55; }
+  .code {
+    display: inline-block;
+    background: var(--panel);
+    color: var(--slate);
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    padding: 1px 6px;
+    border-radius: 4px;
+    margin: 1px;
+  }
+
+  /* ── STRATEGY ── */
+  .strategy-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media(max-width:700px) { .strategy-grid { grid-template-columns: 1fr; } }
+  .strategy-card {
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .strategy-head {
+    padding: 14px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .strategy-body { padding: 16px 18px; }
+  .strategy-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--panel);
+    font-size: 12.5px;
+  }
+  .strategy-item:last-child { border-bottom: none; }
+  .strategy-item-icon {
+    width: 22px; height: 22px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 11px;
+    font-weight: 900;
+    color: white;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .strategy-item-text { color: var(--slate); line-height: 1.5; }
+  .strategy-item-text strong { color: var(--ink); }
+
+  /* ── WEAK ── */
+  .weak-list { display: flex; flex-direction: column; gap: 8px; }
+  .weak-item {
+    background: var(--diff-high-bg);
+    border: 1px solid rgba(140,74,74,0.15);
+    border-left: 3px solid var(--diff-high);
+    border-radius: 8px;
+    padding: 12px 16px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    font-size: 12.5px;
+  }
+  .weak-num { font-weight: 900; color: var(--diff-high); flex-shrink: 0; }
+  .weak-text { color: var(--ink); line-height: 1.5; }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    background: var(--ink);
+    border-top: 3px solid var(--gold);
+    padding: 28px 24px;
+    text-align: center;
+  }
+  .footer-inner { max-width: 1100px; margin: 0 auto; }
+  .footer-logo { font-size: 16px; font-weight: 900; color: var(--gold); margin-bottom: 6px; }
+  .footer-sub  { font-size: 11px; color: #5A7A95; }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease, transform 0.6s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  /* ── DIFF METER ── */
+  .diff-meter {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--white);
+    border: 1px solid var(--rule);
+    border-radius: 12px;
+    padding: 20px 24px;
+    flex-wrap: wrap;
+  }
+  .diff-big-label { font-size: 13px; font-weight: 700; color: var(--slate); width: 80px; }
+  .diff-stars-big { font-size: 24px; color: var(--gold); letter-spacing: 2px; }
+  .diff-tag {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 900;
+    color: var(--diff-mid);
+    background: var(--diff-mid-bg);
+  }
+  .diff-desc { font-size: 12px; color: var(--steel); flex: 1; min-width: 200px; line-height: 1.55; }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header class="site-header">
+  <div class="site-header-inner">
+    <div class="logo">
+      <span class="logo-main">영어쑥쑥어학원</span>
+      <span class="logo-sub">ENGLISH SSUKSSUK ACADEMY</span>
+    </div>
+    <span class="header-badge">학교 시험 분석 리포트</span>
+  </div>
+</header>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-tag">2026학년도 1학기 중간고사</div>
+    <h1 class="hero-title"><span>부곡중학교</span> 3학년 영어</h1>
+    <p class="hero-sub">2026년 4월 29일 실시 &nbsp;·&nbsp; 과목코드 (12) &nbsp;·&nbsp; 2교시</p>
+    <div class="hero-cards">
+      <div class="hero-card">
+        <span class="hero-card-val">28</span>
+        <div class="hero-card-lab">총 문항</div>
+      </div>
+      <div class="hero-card">
+        <span class="hero-card-val">100</span>
+        <div class="hero-card-lab">총 배점</div>
+      </div>
+      <div class="hero-card">
+        <span class="hero-card-val">60</span>
+        <div class="hero-card-lab">객관식 배점</div>
+      </div>
+      <div class="hero-card">
+        <span class="hero-card-val">40</span>
+        <div class="hero-card-lab">서·논술형 배점</div>
+      </div>
+      <div class="hero-card">
+        <span class="hero-card-val gold">92</span>
+        <div class="hero-card-lab">학생 예상 점수</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="main">
+
+  <!-- ── 학생 성취 현황 ── -->
+  <div class="sec-head fade-in">
+    <div class="sec-bar"></div>
+    <h2 class="sec-title">📊 학생 성취 현황</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="cards-4 fade-in" style="margin-bottom:20px;">
+    <div class="stat-card">
+      <div class="stat-card-val">100%</div>
+      <div class="stat-card-lab">객관식 2점 문항 (4문)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-val">86%</div>
+      <div class="stat-card-lab">객관식 3점 문항 (7문 중 6문)</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card-val">100%</div>
+      <div class="stat-card-lab">객관식 4점 문항 (9문)</div>
+    </div>
+    <div class="stat-card accent">
+      <div class="stat-card-val">88%</div>
+      <div class="stat-card-lab">서·논술형 (8문항, 40점)</div>
+    </div>
+  </div>
+
+  <div class="score-wrap fade-in">
+    <div class="score-row">
+      <span class="score-label">객관식</span>
+      <div class="score-bar-bg"><div class="score-bar-fill" style="width:95%;background:var(--area-dialogue);">57점</div></div>
+      <span class="score-pct" style="color:var(--area-dialogue);">57/60</span>
+    </div>
+    <div class="score-row">
+      <span class="score-label">서·논술형</span>
+      <div class="score-bar-bg"><div class="score-bar-fill" style="width:87.5%;background:var(--area-written);">35점</div></div>
+      <span class="score-pct" style="color:var(--area-written);">35/40</span>
+    </div>
+    <div class="score-row" style="margin-bottom:0;">
+      <span class="score-label" style="font-weight:700;color:var(--ink);">총점</span>
+      <div class="score-bar-bg"><div class="score-bar-fill" style="width:92%;background:var(--slate);">92점</div></div>
+      <span class="score-pct" style="color:var(--slate);">92/100</span>
+    </div>
+  </div>
+
+  <!-- ── 종합 난이도 ── -->
+  <div class="diff-meter fade-in" style="margin-top:14px;">
+    <span class="diff-big-label">종합 난이도</span>
+    <span class="diff-stars-big">★★★★☆</span>
+    <span class="diff-tag">중상 (4/5)</span>
+    <p class="diff-desc">서·논술형 비중이 40점으로 높고, to부정사·간접의문문·사역동사 등 주요 문법을 복합적으로 테스트하는 구성입니다. 객관식은 평이하나 서답형 조건 작문에서 점수 변별이 큽니다.</p>
+  </div>
+
+  <!-- ── 출제 분석 차트 ── -->
+  <div class="sec-head fade-in">
+    <div class="sec-bar"></div>
+    <h2 class="sec-title">📈 출제 분석</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="chart-grid fade-in">
+    <!-- 난이도 분포 -->
+    <div class="chart-box">
+      <div class="chart-title">난이도 분포 (28문항)</div>
+      <div class="donut-wrap">
+        <svg class="donut-svg" width="110" height="110" viewBox="0 0 110 110">
+          <circle cx="55" cy="55" r="40" fill="none" stroke="#EEF1F5" stroke-width="18"/>
+          <!-- 하: 5문(17.9%) → 64.4deg -->
+          <circle cx="55" cy="55" r="40" fill="none" stroke="var(--diff-low)" stroke-width="18"
+            stroke-dasharray="45 206" stroke-dashoffset="0" transform="rotate(-90 55 55)"/>
+          <!-- 중: 15문(53.6%) → 193deg -->
+          <circle cx="55" cy="55" r="40" fill="none" stroke="var(--diff-mid)" stroke-width="18"
+            stroke-dasharray="134 117" stroke-dashoffset="-45" transform="rotate(-90 55 55)"/>
+          <!-- 상: 8문(28.6%) → 103deg -->
+          <circle cx="55" cy="55" r="40" fill="none" stroke="var(--diff-high)" stroke-width="18"
+            stroke-dasharray="72 179" stroke-dashoffset="-179" transform="rotate(-90 55 55)"/>
+          <text x="55" y="52" text-anchor="middle" font-size="13" font-weight="900" fill="var(--ink)" font-family="Noto Sans KR">28</text>
+          <text x="55" y="65" text-anchor="middle" font-size="9" fill="var(--steel)" font-family="Noto Sans KR">문항</text>
+        </svg>
+        <div class="donut-legend">
+          <div class="donut-item">
+            <div class="donut-dot" style="background:var(--diff-high);"></div>
+            <span class="donut-item-label">고난도 (상)</span>
+            <span class="donut-item-val">8문 (28.6%)</span>
+          </div>
+          <div class="donut-item">
+            <div class="donut-dot" style="background:var(--diff-mid);"></div>
+            <span class="donut-item-label">보통 (중)</span>
+            <span class="donut-item-val">15문 (53.6%)</span>
+          </div>
+          <div class="donut-item">
+            <div class="donut-dot" style="background:var(--diff-low);"></div>
+            <span class="donut-item-label">기본 (하)</span>
+            <span class="donut-item-val">5문 (17.9%)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 출제영역 분포 -->
+    <div class="chart-box">
+      <div class="chart-title">출제영역별 문항 수</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <span class="bar-label">본문 독해</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:71.4%;background:var(--area-text);">10문</div></div>
+          <span class="bar-count">10</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">서답형</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:57.1%;background:var(--area-written);">8문</div></div>
+          <span class="bar-count">8</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">문법</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:28.6%;background:var(--area-grammar);">4문</div></div>
+          <span class="bar-count">4</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">대화문</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:28.6%;background:var(--area-dialogue);">4문</div></div>
+          <span class="bar-count">4</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">어휘</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:14.3%;background:var(--area-vocab);">2문</div></div>
+          <span class="bar-count">2</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 배점 분포 -->
+    <div class="chart-box">
+      <div class="chart-title">문항유형별 배점 (점)</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <span class="bar-label">서답형</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:100%;background:var(--area-written);">40점</div></div>
+          <span class="bar-count">40</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">4점 × 9문</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:78%;background:var(--area-grammar);">31점</div></div>
+          <span class="bar-count">31</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">3점 × 7문</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:52%;background:var(--area-dialogue);">21점</div></div>
+          <span class="bar-count">21</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">2점 × 4문</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:20%;background:var(--area-text);">8점</div></div>
+          <span class="bar-count">8</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 학생 영역별 정답률 -->
+    <div class="chart-box">
+      <div class="chart-title">학생 영역별 정답률</div>
+      <div class="bar-chart">
+        <div class="bar-row">
+          <span class="bar-label">본문 독해</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:100%;background:var(--area-text);">100%</div></div>
+          <span class="bar-count" style="color:var(--diff-low);">✓</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">대화문</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:100%;background:var(--area-dialogue);">100%</div></div>
+          <span class="bar-count" style="color:var(--diff-low);">✓</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">문법</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:85%;background:var(--area-grammar);">85%</div></div>
+          <span class="bar-count">85%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">서답형</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:87%;background:var(--area-written);">87%</div></div>
+          <span class="bar-count">87%</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-label">어휘</span>
+          <div class="bar-bg"><div class="bar-fill" style="width:75%;background:var(--area-vocab);">75%</div></div>
+          <span class="bar-count" style="color:var(--diff-mid);">75%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 핵심 출제 포인트 ── -->
+  <div class="sec-head fade-in">
+    <div class="sec-bar"></div>
+    <h2 class="sec-title">🎯 시험 핵심 출제 포인트</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="point-list fade-in">
+    <div class="point-card" style="border-left-color:var(--diff-high);">
+      <div class="point-rank" style="background:var(--diff-high);">1</div>
+      <div class="point-body">
+        <div class="point-title">to부정사 형용사적 용법 <span class="badge high">★★★ 고난도</span></div>
+        <div class="point-desc">명사 뒤에서 명사를 수식하는 to부정사. 어순·수식 대상 일치 필수.<br>
+          <span class="code">things to do</span> <span class="code">water to drink</span> <span class="code">friends to talk to</span> <span class="code">a comfortable bed to sleep on</span><br>
+          서답형 3·4번, 객관식 3·10번에서 반복 출제. 전치사 위치(to talk <u>to</u>) 특히 주의.</div>
+      </div>
+    </div>
+    <div class="point-card" style="border-left-color:var(--diff-high);">
+      <div class="point-rank" style="background:var(--diff-high);">2</div>
+      <div class="point-body">
+        <div class="point-title">간접의문문 whether / if <span class="badge high">★★★ 고난도</span></div>
+        <div class="point-desc">
+          <span class="code">I wonder/know/sure + whether/if + 주어 + 동사</span> 어순.<br>
+          직접의문문 → 간접의문문 전환 훈련 필수. 7번·서답형2 출제.<br>
+          <em>I didn't know whether I really enjoyed it.</em> / <em>Harry was sure (that) his older brother was telling the truth.</em>
+        </div>
+      </div>
+    </div>
+    <div class="point-card" style="border-left-color:var(--diff-mid);">
+      <div class="point-rank" style="background:var(--diff-mid);">3</div>
+      <div class="point-body">
+        <div class="point-title">사역동사 let / make / have / help <span class="badge mid">★★☆ 보통</span></div>
+        <div class="point-desc">
+          <span class="code">let/make/have + 목적어 + 동사원형</span> &nbsp; <span class="code">help + 목적어 + (to) 동사원형</span><br>
+          11번 보기 전체가 이 구문 테스트. <em>"had us <u>to</u> clean"</em> → to 삭제 오류 포인트 암기 필수.
+        </div>
+      </div>
+    </div>
+    <div class="point-card" style="border-left-color:var(--diff-mid);">
+      <div class="point-rank" style="background:var(--diff-mid);">4</div>
+      <div class="point-body">
+        <div class="point-title">so that 목적·결과 구문 <span class="badge mid">★★☆ 보통</span></div>
+        <div class="point-desc">
+          <span class="code">so that + 주어 + can/could + 동사</span> 목적 표현. 서답형 8번(8-1, 8-2) 핵심 출제.<br>
+          <em>Turn up the volume so that everyone can hear.</em><br>
+          <em>Jenny went home early so that she could take a rest.</em>
+        </div>
+      </div>
+    </div>
+    <div class="point-card" style="border-left-color:var(--area-text);">
+      <div class="point-rank" style="background:var(--area-text);">5</div>
+      <div class="point-body">
+        <div class="point-title">본문 독해 — 3개 지문 <span class="badge text">본문</span></div>
+        <div class="point-desc">
+          ① <strong>David Parker (사진작가 이야기)</strong> — 꿈 발견·실현 과정, 간접의문문 활용<br>
+          ② <strong>My Comfort Food (위안 음식)</strong> — Jessica/Simon/Maria 3개국 지문, 단락 배열·문장 삽입<br>
+          ③ <strong>Madeleine 레시피</strong> — 조리법 관련 서답형 영작 출제
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 문항별 상세 분석 ── -->
+  <div class="sec-head fade-in">
+    <div class="sec-bar"></div>
+    <h2 class="sec-title">📋 문항별 상세 분석</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="table-wrap fade-in">
+    <table>
+      <thead>
+        <tr>
+          <th>번호</th>
+          <th>배점</th>
+          <th>난이도</th>
+          <th>출제영역</th>
+          <th style="text-align:left;">출제 포인트 및 핵심 문형</th>
+          <th>결과</th>
+        </tr>
+      </thead>
+      <tbody id="q-table"></tbody>
+    </table>
+  </div>
+
+  <!-- ── 취약 문항 ── -->
+  <div class="sec-head fade-in">
+    <div class="sec-bar"></div>
+    <h2 class="sec-title">⚠️ 오답 & 감점 문항 분석</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <div class="weak-list fade-in">
+    <div class="weak-item">
+      <span class="weak-num">13번 (3점)</span>
+      <span class="weak-text"><strong>오답:</strong> ③ quality 선택 → 정답 ④ beat. <em>"quality: an amount that you can count"</em>는 틀린 뜻풀이 (quality = 특성·질). 정답은 <em>"beat: to mix food together quickly using a fork or a kitchen tool"</em>. 교과 어휘를 뜻풀이 암기 없이 우리말로만 외운 것이 원인 — <strong>영영 정의까지 함께 학습하는 습관</strong>이 필요합니다.</span>
+    </div>
+    <div class="weak-item">
+      <span class="weak-num">서답형 6-1 (부분 감점)</span>
+      <span class="weak-text"><strong>표현 불완전:</strong> "two bottles"까지만 작성 → 정답 <em>"I'd like to order two bottles of water."</em> 영수증 기반 대화 완성 시 <strong>수량 + 단위(bottles of) + 품목(water)</strong> 세 요소를 모두 포함해야 합니다. 조건의 단어 수(8~9단어)를 먼저 확인하는 습관이 필요합니다.</span>
+    </div>
+    <div class="weak-item">
+      <span class="weak-num">서답형 7-1 (부분 감점)</span>
+      <span class="weak-text"><strong>어순 오류:</strong> "Add to the flour the bowl and mix" → 정답 <em>"Add flour to the bowl and mix it."</em> 단어를 모두 알면서도 어순 실수로 감점된 <strong>대표적인 영작 실수 유형</strong>. 동사 + <u>목적어</u> + 전치사구 순서를 의식적으로 체크하는 훈련이 필요합니다.</span>
+    </div>
+  </div>
+
+  <!-- ── 학습 전략 ── -->
+  <div class="sec-head fade-in">
+    <div class="sec-bar"></div>
+    <h2 class="sec-title">✅ 맞춤 학습 전략</h2>
+    <div class="sec-rule"></div>
+  </div>
+
+  <!-- 전략 도입 멘트 -->
+  <div class="score-wrap fade-in" style="margin-bottom:20px; border-left:4px solid var(--gold); padding-left:24px;">
+    <p style="font-size:13px; color:var(--slate); line-height:1.75;">
+      이 학생은 <strong>객관식·본문 독해에서 완벽에 가까운 성취</strong>를 보였습니다.
+      감점은 모두 <strong>서답형 영작</strong>에서 발생했으며, 알고 있는 문법을 <em>실제 문장으로 정확하게 쓰는 능력</em>이 핵심 과제입니다.
+      단기는 <strong>영작 실수 제거</strong>에 집중하고, 중장기는 <strong>자유 영작 실력 확장</strong>을 목표로 합니다.
+    </p>
+  </div>
+
+  <!-- 단기 1개월 -->
+  <div class="strategy-card fade-in" style="margin-bottom:16px;">
+    <div class="strategy-head" style="background:var(--diff-high);">
+      🔴 &nbsp;단기 집중 — 1개월 플랜 &nbsp;<span style="font-size:11px;font-weight:400;opacity:0.85;">(영작 실수 완전 제거)</span>
+    </div>
+    <div class="strategy-body">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;" class="strat-inner">
+
+        <div class="strategy-item" style="border-right:1px solid var(--panel);">
+          <div class="strategy-item-icon" style="background:var(--diff-high);">1주</div>
+          <div class="strategy-item-text">
+            <strong>서답형 조건 체크리스트 습관화</strong><br>
+            답안 작성 전 ① 단어 수 ② 시제 ③ 사용 단어 조건을 반드시 먼저 확인. 매일 서답형 2문제씩 조건 영작 연습 (기출 활용).
+          </div>
+        </div>
+
+        <div class="strategy-item">
+          <div class="strategy-item-icon" style="background:var(--diff-high);">1주</div>
+          <div class="strategy-item-text">
+            <strong>to부정사 형용사적 용법 어순 드릴</strong><br>
+            <span class="code">명사 + to부정사</span> 패턴 20개 받아쓰기. 전치사 동반 패턴
+            <span class="code">to talk to</span> <span class="code">to sleep on</span> <span class="code">to write with</span> 집중 훈련.
+          </div>
+        </div>
+
+        <div class="strategy-item" style="border-right:1px solid var(--panel);">
+          <div class="strategy-item-icon" style="background:var(--diff-high);">2주</div>
+          <div class="strategy-item-text">
+            <strong>영작 어순 오류 교정 훈련</strong><br>
+            동사 + 목적어 + 전치사구 순서를 틀리는 패턴 집중 교정.
+            오답 문장(Add to the flour the bowl…)을 직접 고쳐 쓰는 <em>오류 수정 훈련</em> 매일 5문장.
+          </div>
+        </div>
+
+        <div class="strategy-item">
+          <div class="strategy-item-icon" style="background:var(--diff-high);">2주</div>
+          <div class="strategy-item-text">
+            <strong>간접의문문 전환 집중 반복</strong><br>
+            직접의문문 → 간접의문문 전환 30문장 매일 작성.
+            <span class="code">whether</span> / <span class="code">if</span> 구분 + <span class="code">I wonder / I don't know / I'm not sure</span> 도입부 패턴 완전 암기.
+          </div>
+        </div>
+
+        <div class="strategy-item" style="border-right:1px solid var(--panel);">
+          <div class="strategy-item-icon" style="background:var(--diff-high);">3주</div>
+          <div class="strategy-item-text">
+            <strong>핵심 문법 구문 영작 실전 테스트</strong><br>
+            사역동사(let/make/have/help) · so that · to부정사 혼합 서술형 문제 주 2회 실전 풀이. 틀린 문장은 3회 다시 쓰기.
+          </div>
+        </div>
+
+        <div class="strategy-item">
+          <div class="strategy-item-icon" style="background:var(--diff-high);">3주</div>
+          <div class="strategy-item-text">
+            <strong>교과 어휘 영영 정의 암기</strong><br>
+            comfort / quality / beat / stable / bold / inspire / audience 등 교과 핵심 어휘 30개를 <em>우리말 뜻 + 영영 정의</em> 세트로 암기. 영영 풀이 문제 유형 대비.
+          </div>
+        </div>
+
+        <div class="strategy-item" style="border-right:1px solid var(--panel); border-bottom:none;">
+          <div class="strategy-item-icon" style="background:var(--diff-high);">4주</div>
+          <div class="strategy-item-text">
+            <strong>모의 서답형 실전 모의고사</strong><br>
+            1개월간 학습한 내용으로 서답형 8문항 분량의 모의 테스트 진행. 시간 제한(20분) 내 완성 연습 → 실전 감각 훈련.
+          </div>
+        </div>
+
+        <div class="strategy-item" style="border-bottom:none;">
+          <div class="strategy-item-icon" style="background:var(--diff-high);">4주</div>
+          <div class="strategy-item-text">
+            <strong>1개월 점검 목표</strong><br>
+            ① 서답형 어순 오류 0건 ② 조건 누락 0건 ③ 어휘 영영정의 30개 완벽 암기.
+            <em>목표 점수: 서답형 40점 만점 달성</em>.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 중장기 1년 -->
+  <div class="strategy-card fade-in">
+    <div class="strategy-head" style="background:var(--diff-low);">
+      🟢 &nbsp;중장기 보완 — 1년 플랜 &nbsp;<span style="font-size:11px;font-weight:400;opacity:0.85;">(자유 영작 실력 확장)</span>
+    </div>
+    <div class="strategy-body">
+
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:4px;" class="year-grid">
+
+        <div style="background:var(--panel);border-radius:8px;padding:14px 12px;border-top:3px solid var(--diff-low);">
+          <div style="font-size:11px;font-weight:900;color:var(--diff-low);margin-bottom:6px;">1~3개월</div>
+          <div style="font-size:12px;font-weight:700;color:var(--ink);margin-bottom:6px;">문형 확장</div>
+          <div style="font-size:11px;color:var(--steel);line-height:1.6;">
+            교과서 핵심 문형 10개를 매주 1개씩 집중 영작 훈련. 배운 문형으로 <strong>일기 2~3문장 쓰기</strong> 습관화.
+          </div>
+        </div>
+
+        <div style="background:var(--panel);border-radius:8px;padding:14px 12px;border-top:3px solid #5C8A6E;">
+          <div style="font-size:11px;font-weight:900;color:#5C8A6E;margin-bottom:6px;">4~6개월</div>
+          <div style="font-size:12px;font-weight:700;color:var(--ink);margin-bottom:6px;">문단 영작</div>
+          <div style="font-size:11px;color:var(--steel);line-height:1.6;">
+            5~7문장 길이의 <strong>단락 영작</strong> 주 2회 훈련. 주제문 + 근거 + 마무리 3단 구조 익히기. 교사 첨삭 피드백 필수.
+          </div>
+        </div>
+
+        <div style="background:var(--panel);border-radius:8px;padding:14px 12px;border-top:3px solid var(--area-grammar);">
+          <div style="font-size:11px;font-weight:900;color:var(--area-grammar);margin-bottom:6px;">7~9개월</div>
+          <div style="font-size:12px;font-weight:700;color:var(--ink);margin-bottom:6px;">고급 문형 도입</div>
+          <div style="font-size:11px;color:var(--steel);line-height:1.6;">
+            관계대명사·분사·접속사 등 <strong>고급 문형 영작</strong>으로 확장. 서술형 답안의 완성도·표현 다양성 향상 목표.
+          </div>
+        </div>
+
+        <div style="background:var(--panel);border-radius:8px;padding:14px 12px;border-top:3px solid var(--slate);">
+          <div style="font-size:11px;font-weight:900;color:var(--slate);margin-bottom:6px;">10~12개월</div>
+          <div style="font-size:12px;font-weight:700;color:var(--ink);margin-bottom:6px;">자유 영작 완성</div>
+          <div style="font-size:11px;color:var(--steel);line-height:1.6;">
+            조건 없는 <strong>자유 주제 영작</strong> 훈련. 기말·수행평가 대비 100점 서술형 완성. 영어 에세이 기초 확립.
+          </div>
+        </div>
+
+      </div>
+
+      <div style="margin-top:14px;padding:14px 16px;background:var(--diff-low-bg);border-radius:8px;border-left:3px solid var(--diff-low);">
+        <span style="font-size:12px;font-weight:700;color:var(--diff-low);">🎯 1년 후 목표 &nbsp;</span>
+        <span style="font-size:12px;color:var(--slate);">서술형 만점 달성 → 조건 제시 없이도 자신의 생각을 영어로 표현 가능한 수준. 고등학교 영어 서술형·논술형 대비 기초 완성.</span>
+      </div>
+
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">영어쑥쑥어학원</div>
+    <div class="footer-sub">부곡중학교 3학년 영어 &nbsp;|&nbsp; 2026학년도 1학기 중간고사 분석 리포트<br>본 자료의 저작권은 영어쑥쑥어학원에 있습니다.</div>
+  </div>
+</footer>
+
+<script>
+const questions = [
+  ['서1-1', 4, '중', '대화문', '단어 배열 영작 — 현재완료 의문문 <em>Have you also seen the movie about the book?</em>', '✅'],
+  [1,       3, '중', '대화문', '대화 내용 일치 — 현재완료 경험 표현 이해 (한 명이 영화가 책보다 낫다고 생각)', '✅'],
+  ['서1-2', 4, '중', '본문',   '단어 배열 영작 — 간접의문문 <em>whether I really enjoyed it</em>', '✅'],
+  [2,       2, '하', '어휘',   '빈칸 공통어휘 — bold / quit / stable / inspire 중 문맥에 맞는 어휘 추론', '✅'],
+  [3,       3, '중', '문법',   'to부정사 용법 짝짓기 — 명사적 / 형용사적 / 부사적 용법 구분', '✅'],
+  [4,       2, '중', '어휘',   'realize 의미 구분 — "깨닫다" vs "실현하다" 문맥에 따른 의미 차이', '✅'],
+  [5,       3, '상', '본문',   '밑줄 어색한 표현 — ⓐ what→that, ⓒ amazing 문맥 적절성 파악', '✅'],
+  ['서2',   4, '중', '본문',   '단어 배열 — 간접의문문 whether 활용 (A)빈칸 완성', '✅'],
+  [6,       2, '하', '본문',   '지문 내용 일치 — David Parker 사진작가 이야기 세부정보 확인', '✅'],
+  [7,       4, '상', '문법',   '간접의문문 빈칸 — whether / if 용법 (Harry was sure ___ 구별)', '✅'],
+  ['서3',   5, '상', '문법',   'to부정사 형용사 용법 영작 — <em>He has no friends to talk to.</em>', '✅'],
+  [8,       3, '중', '본문',   '내용 불일치 파악 — 화자는 두려웠지만 도전했다 (④ 오답)', '✅'],
+  [9,       4, '중', '문법',   'if 의미 구별 — 조건절 vs 간접의문문 속 if (③ 조건절이 다름)', '✅'],
+  [10,      4, '상', '문법',   '어법상 옳은 문장 — to부정사 형용사용법 어순 오류 식별', '✅'],
+  [11,      4, '상', '문법',   '사역동사 어법 — let / make / have / help 목적격 보어 형태 (had us to clean → 오류)', '✅'],
+  [12,      3, '중', '문법',   '내용상 어색한 문장 — so that 인과관계 오류 (①)', '✅'],
+  [13,      3, '중', '어휘',   '영어 뜻풀이 옳은 것 — ③ quality: 셀 수 있는 양(오답) → 정답 ④ beat: to mix food quickly using a fork or kitchen tool', '❌'],
+  [14,      2, '하', '어휘',   '빈칸 어휘 — comfort (위안) 문맥 파악 → 정확히 선택', '✅'],
+  ['서4-1', 3, '중', '문법',   'to부정사 형용사 용법 — <em>He has a lot of things to do.</em>', '✅'],
+  ['서4-2', 3, '중', '문법',   'to부정사 형용사 용법 — <em>She needs some water to drink.</em>', '✅'],
+  [15,      3, '중', '본문',   '단락 순서 배열 — My Comfort Food 글의 흐름 [B]-[A]-[D]-[C]', '✅'],
+  [16,      3, '중', '본문',   '문장 삽입 — "The hot soup warmed my body" 적절한 위치 (ⓓ)', '✅'],
+  [17,      3, '중', '본문',   '빈칸 ⓐ/ⓑ/ⓒ 단어 나열 — like / with / of (전치사 활용)', '✅'],
+  [18,      3, '중', '본문',   'T/F 판별 — Simon의 마들렌 글 내용 일치 (④ 할머니 레시피 → F)', '✅'],
+  [19,      2, '하', '본문',   '문장 삽입 — "best when come right out of the oven" 위치 (ⓓ)', '✅'],
+  [20,      4, '상', '문법',   '어법상 옳지 않은 것 — ⓐ what→that 관계대명사 오류', '✅'],
+  ['서5',   4, '상', '본문',   '조건 영작 — <em>The crisp sound of eating chips made me feel better.</em>', '✅'],
+  ['서6-1', 3, '중', '대화문', '영수증 대화완성 — <em>I\'d like to order two bottles of water.</em> (8~9단어)', '△'],
+  ['서6-2', 2, '하', '대화문', '영수증 대화완성 — <em>Is it for here or to go?</em> (7단어)', '✅'],
+  ['서7-1', 3, '상', '본문',   '레시피 영작 — <em>Add flour to the bowl and mix it.</em> (어순 오류 주의)', '△'],
+  ['서7-2', 3, '중', '본문',   '레시피 영작 — <em>Pour the mixture into the madeleine pan.</em>', '✅'],
+  ['서8-1', 3, '중', '문법',   'so that 영작 — <em>Turn up the volume so that everyone can hear.</em>', '✅'],
+  ['서8-2', 3, '중', '문법',   'so that 영작 — <em>Jenny went home early so that she could take a rest.</em>', '✅'],
+];
+
+const diffMap = {
+  '상': {cls:'high', label:'상 ★★★'},
+  '중': {cls:'mid',  label:'중 ★★☆'},
+  '하': {cls:'low',  label:'하 ★☆☆'},
+};
+const areaMap = {
+  '대화문': 'dialogue',
+  '본문':   'text',
+  '어휘':   'vocab',
+  '문법':   'grammar',
+  '서답형': 'written', // fallback
+};
+
+const tbody = document.getElementById('q-table');
+questions.forEach(([num, pts, diff, area, point, result]) => {
+  const isWritten = typeof num === 'string';
+  const isWrong   = result === '❌';
+  const isPartial = result === '△';
+  const tr = document.createElement('tr');
+  if (isWrong)   tr.className = 'wrong-row';
+  else if (isPartial) tr.className = 'partial-row';
+  else if (isWritten) tr.className = 'written-row';
+
+  const d = diffMap[diff];
+  const areaCls = areaMap[area] || 'text';
+  const resultHtml = result === '✅' ? `<span class="result-ok">✅</span>`
+                   : result === '❌' ? `<span class="result-fail">❌</span>`
+                   : `<span class="result-part">△</span>`;
+
+  tr.innerHTML = `
+    <td><span class="num-badge ${isWritten?'written':''}">${num}</span></td>
+    <td style="text-align:center;font-weight:700;">${pts}점</td>
+    <td style="text-align:center;"><span class="badge ${d.cls}">${d.label}</span></td>
+    <td style="text-align:center;"><span class="badge ${areaCls}">${area}</span></td>
+    <td class="point-text">${point}</td>
+    <td style="text-align:center;">${resultHtml}</td>
+  `;
+  tbody.appendChild(tr);
+});
+
+// Scroll fade-in
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); } });
+}, { threshold: 0.08 });
+document.querySelectorAll('.fade-in').forEach(el => obs.observe(el));
+
+// Animate bars on load
+window.addEventListener('load', () => {
+  const fills = document.querySelectorAll('.score-bar-fill, .bar-fill');
+  fills.forEach(f => {
+    const w = f.style.width;
+    f.style.width = '0';
+    setTimeout(() => { f.style.width = w; }, 200);
+  });
+});
+</script>
+</body>
+</html>
