@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>장전중학교 2학년 영어 2학기 중간고사 분석 | 영어쑥쑥어학원</title>
+<title>장전중학교 2학년 영어 2학기 중간고사 분석 | 라이징영어학원</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#1C2B3A;--slate:#3B5068;--steel:#6B8299;--gold:#C9A84C;--cream:#F7F4EE;--panel:#EEF1F5;--rule:#C5CDD8;--white:#FFFFFF;--dh:#8C4A4A;--dhb:#F5ECEC;--dm:#7A6830;--dmb:#F5F2E8;--dl:#3A6B50;--dlb:#ECF2EE;--ad:#4A6FA5;--at:#5C8A6E;--av:#8E6FA3;--ag:#B07D52;--aw:#6A8FA0}
+:root{--ink:#1C2B3A;--slate:#3B5068;--steel:#6B8299;--gold:#C9A84C;--cream:#F7F4EE;--panel:#EEF1F5;--rule:#C5CDD8;--white:#FFFFFF;
+--dh:#8C4A4A;--dhb:#F5ECEC;--dm:#7A6830;--dmb:#F5F2E8;--dl:#3A6B50;--dlb:#ECF2EE;
+--cg:#4A6FA5;--cb:#5C8A6E;--cd:#8E6FA3;--cv:#B07D52;--aw:#6A8FA0}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Noto Sans KR',sans-serif;background:var(--cream);color:var(--ink);line-height:1.6}
 .hd{background:var(--ink);position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.25)}
@@ -37,28 +39,25 @@ body{font-family:'Noto Sans KR',sans-serif;background:var(--cream);color:var(--i
 .pill span{color:var(--gold)}.pill small{color:var(--steel);font-weight:400;font-size:10px}
 .bdg{display:inline-block;padding:3px 10px;border-radius:99px;font-size:11px;font-weight:700}
 .bdg.hi2{background:var(--dhb);color:var(--dh)}.bdg.mi{background:var(--dmb);color:var(--dm)}.bdg.lo{background:var(--dlb);color:var(--dl)}
-.bdg.dia{background:rgba(74,111,165,.12);color:var(--ad)}.bdg.txt{background:rgba(92,138,110,.12);color:var(--at)}
-.bdg.voc{background:rgba(142,111,163,.12);color:var(--av)}.bdg.grm{background:rgba(176,125,82,.12);color:var(--ag)}
-.bdg.wrt{background:rgba(106,143,160,.12);color:var(--aw)}
+.bdg.grm{background:rgba(74,111,165,.15);color:var(--cg)}.bdg.txt{background:rgba(92,138,110,.15);color:var(--cb)}
+.bdg.dia{background:rgba(142,111,163,.15);color:var(--cd)}.bdg.voc{background:rgba(176,125,82,.15);color:var(--cv)}
+.bdg.wrt{background:rgba(106,143,160,.15);color:var(--aw)}
 .dm2{display:flex;align-items:center;gap:12px;background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:20px 24px;flex-wrap:wrap;margin-top:14px}
 .dml{font-size:13px;font-weight:700;color:var(--slate);width:80px}.dms{font-size:24px;color:var(--gold);letter-spacing:2px}
 .dmt{padding:6px 16px;border-radius:20px;font-size:13px;font-weight:900;color:var(--dh);background:var(--dhb)}
 .dmd{font-size:12px;color:var(--steel);flex:1;min-width:200px;line-height:1.55}
-.cg{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-@media(max-width:700px){.cg{grid-template-columns:1fr}}
-.cb{background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:22px 20px 18px}
+/* 3-chart grid */
+.cg3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+@media(max-width:800px){.cg3{grid-template-columns:1fr}}
+.cb2{background:var(--white);border:1px solid var(--rule);border-radius:12px;padding:22px 20px 18px}
 .ct{font-size:13px;font-weight:700;color:var(--slate);margin-bottom:18px;padding-bottom:10px;border-bottom:1px solid var(--panel)}
-.bc{display:flex;flex-direction:column;gap:10px}
-.br{display:flex;align-items:center;gap:10px}
-.bl{font-size:12px;color:var(--steel);width:76px;flex-shrink:0;text-align:right}
-.bb{flex:1;height:22px;background:var(--panel);border-radius:4px;overflow:hidden}
-.bf{height:100%;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:11px;font-weight:700;color:white;transition:width 1.4s cubic-bezier(.23,1,.32,1);min-width:32px}
-.bn{font-size:12px;color:var(--ink);font-weight:700;width:34px;flex-shrink:0}
-.dw{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
-.dl2{display:flex;flex-direction:column;gap:10px}
+/* donut */
+.dw{display:flex;flex-direction:column;align-items:center;gap:14px}
+.dl2{display:flex;flex-direction:column;gap:8px;width:100%}
 .di{display:flex;align-items:center;gap:8px}
 .dd{width:10px;height:10px;border-radius:50%;flex-shrink:0}
-.dil{font-size:12px;color:var(--steel)}.div2{font-size:12px;font-weight:700;color:var(--ink);margin-left:auto;padding-left:12px}
+.dil{font-size:12px;color:var(--steel);flex:1}.div2{font-size:12px;font-weight:700;color:var(--ink)}
+/* table */
 .tw{overflow-x:auto}
 table{width:100%;border-collapse:separate;border-spacing:0;background:var(--white);border-radius:12px;overflow:hidden;border:1px solid var(--rule);font-size:12.5px}
 thead tr{background:var(--ink)}
@@ -72,27 +71,29 @@ td{padding:10px;vertical-align:middle;color:var(--ink);border-bottom:1px solid v
 td:first-child{padding-left:16px}
 .nb{display:inline-flex;align-items:center;justify-content:center;width:38px;height:24px;border-radius:5px;font-size:11px;font-weight:700;color:white;background:var(--slate);font-family:'DM Mono',monospace}
 .nb.w{background:var(--aw)}.pt{color:var(--slate);font-size:12px;line-height:1.4}
-.cd{display:inline-block;background:var(--panel);color:var(--slate);font-family:'DM Mono',monospace;font-size:11px;padding:1px 6px;border-radius:4px;margin:1px}
+.cd2{display:inline-block;background:var(--panel);color:var(--slate);font-family:'DM Mono',monospace;font-size:11px;padding:1px 6px;border-radius:4px;margin:1px}
+/* point cards */
 .pl{display:flex;flex-direction:column;gap:10px}
-.pc{background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:16px 18px;display:flex;gap:14px;align-items:flex-start;border-left:4px solid var(--slate)}
-.pr2{font-size:11px;font-weight:900;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:white}
-.pb{flex:1}.ptl{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:4px}.pde{font-size:12px;color:var(--steel);line-height:1.55}
-.db{background:var(--white);border:1px solid var(--rule);border-radius:10px;border-left:4px solid var(--gold);padding:18px 22px;margin-bottom:14px}
+.pc{background:var(--white);border:1px solid var(--rule);border-radius:10px;padding:14px 18px;display:flex;gap:12px;align-items:flex-start;border-left:4px solid var(--slate)}
+.pr2{font-size:11px;font-weight:900;width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:white}
+.pb{flex:1}.ptl{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:3px}.pde{font-size:12px;color:var(--steel);line-height:1.5}
+/* strategy */
+.db{background:var(--white);border:1px solid var(--rule);border-radius:10px;border-left:4px solid var(--gold);padding:16px 20px;margin-bottom:14px}
 .db p{font-size:13px;color:var(--slate);line-height:1.8}
 .stc{background:var(--white);border:1px solid var(--rule);border-radius:12px;overflow:hidden;margin-bottom:16px}
-.sth{padding:14px 18px;font-size:13px;font-weight:700;color:var(--white);display:flex;align-items:center;gap:8px}
-.stb{padding:16px 18px}
+.sth{padding:12px 18px;font-size:13px;font-weight:700;color:var(--white);display:flex;align-items:center;gap:8px}
+.stb{padding:14px 18px}
 .si2{display:grid;grid-template-columns:1fr 1fr;gap:0}
 @media(max-width:700px){.si2{grid-template-columns:1fr!important}}
-.si{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:1px solid var(--panel);font-size:12.5px}
+.si{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--panel);font-size:12px}
 .si:last-child{border-bottom:none}
-.sii{width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:900;color:white;flex-shrink:0;margin-top:1px}
-.sit{color:var(--slate);line-height:1.5}.sit strong{color:var(--ink)}
-.yg{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:4px}
-@media(max-width:720px){.yg{grid-template-columns:repeat(2,1fr)!important}}
-.yc{background:var(--panel);border-radius:8px;padding:14px 12px}
-.ym{font-size:11px;font-weight:900;margin-bottom:6px}.ytl{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:6px}.yd{font-size:11px;color:var(--steel);line-height:1.6}
-.gb{margin-top:14px;padding:14px 16px;background:var(--dlb);border-radius:8px;border-left:3px solid var(--dl)}
+.sii{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:900;color:white;flex-shrink:0;margin-top:2px}
+.sit{color:var(--slate);line-height:1.45}.sit strong{color:var(--ink)}
+.yg{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:4px}
+@media(max-width:600px){.yg{grid-template-columns:1fr!important}}
+.yc{background:var(--panel);border-radius:8px;padding:14px 14px}
+.ym{font-size:11px;font-weight:900;margin-bottom:5px}.ytl{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:5px}.yd{font-size:11px;color:var(--steel);line-height:1.6}
+.gb{margin-top:12px;padding:12px 16px;background:var(--dlb);border-radius:8px;border-left:3px solid var(--dl)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
 .fi{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
 .fi.vis{opacity:1;transform:translateY(0)}
@@ -104,7 +105,7 @@ td:first-child{padding-left:16px}
 
 <header class="hd">
   <div class="hdi">
-    <div><div class="lm">영어쑥쑥어학원</div><div class="ls">ENGLISH SSUKSSUK ACADEMY</div></div>
+    <div><div class="lm">라이징영어학원</div><div class="ls">RISING ENGLISH ACADEMY</div></div>
     <span class="hb">학교 시험 분석 리포트</span>
   </div>
 </header>
@@ -119,168 +120,185 @@ td:first-child{padding-left:16px}
       <div class="hcard"><span class="hcv">100</span><div class="hcl">총 배점</div></div>
       <div class="hcard"><span class="hcv">18</span><div class="hcl">선택형 문항</div></div>
       <div class="hcard"><span class="hcv">6</span><div class="hcl">서답형 문항</div></div>
-      <div class="hcard"><span class="hcv">44</span><div class="hcl">서답형 배점</div></div>
+      <div class="hcard"><span class="hcv">40</span><div class="hcl">서답형 배점</div></div>
     </div>
   </div>
 </section>
 
 <main class="main">
 
+  <!-- 배점 구조 -->
   <div class="sh fi"><div class="sb"></div><h2 class="st">📐 배점 구조</h2><div class="sr"></div></div>
   <div class="g5 fi">
-    <div class="sc"><div class="scv">0문</div><div class="scl">선택형 2점 = 0점</div></div>
-    <div class="sc"><div class="scv">8문</div><div class="scl">선택형 3점 × 8 = 24점<br><small style="color:var(--steel)">(1·2·3·6·7·10·12·13·15번 등)</small></div></div>
-    <div class="sc"><div class="scv">10문</div><div class="scl">선택형 4점 × 10 = 32점<br><small style="color:var(--steel)">(4·5·8·9·11·14·16·17·18번 등)</small></div></div>
-    <div class="sc ac"><div class="scv">44점</div><div class="scl">서답형 합계 (6문항)</div></div>
+    <div class="sc"><div class="scv">1문</div><div class="scl">선택형 2점 × 1 = 2점<br><small style="color:var(--steel)">(12번)</small></div></div>
+    <div class="sc"><div class="scv">10문</div><div class="scl">선택형 3점 × 10 = 30점<br><small style="color:var(--steel)">(1·2·3·6·7·8·10·13·15·17번)</small></div></div>
+    <div class="sc"><div class="scv">7문</div><div class="scl">선택형 4점 × 7 = 28점<br><small style="color:var(--steel)">(4·5·9·11·14·16·18번)</small></div></div>
+    <div class="sc ac"><div class="scv">40점</div><div class="scl">서답형 합계 (6문항)</div></div>
     <div class="sc"><div class="scv">100점</div><div class="scl">총 배점</div></div>
   </div>
   <div class="pills fi">
-    <span class="pill">서1 <span>7점</span> <small>(want+목적어+to 영작)</small></span>
-    <span class="pill">서2 <span>10점</span> <small>(5+5, 지하철 노선 영작)</small></span>
-    <span class="pill">서3 <span>5점</span> <small>(else+for 의문문 영작)</small></span>
-    <span class="pill">서4 <span>6점</span> <small>(so~that 영작)</small></span>
-    <span class="pill">서5 <span>6점</span> <small>(지각동사 영작)</small></span>
-    <span class="pill">서6 <span>6점</span> <small>(목적격 관계대명사 영작)</small></span>
+    <span class="pill">서1 <span>7점</span> <small>(문법·영작)</small></span>
+    <span class="pill">서2 <span>10점</span> <small>(본문·영작)</small></span>
+    <span class="pill">서3 <span>5점</span> <small>(대화문·영작)</small></span>
+    <span class="pill">서4 <span>6점</span> <small>(문법·영작)</small></span>
+    <span class="pill">서5 <span>6점</span> <small>(문법·영작)</small></span>
+    <span class="pill">서6 <span>6점</span> <small>(문법·영작)</small></span>
     <span style="font-size:12px;color:var(--steel);align-self:center;">= 합계 <strong style="color:var(--ink)">40점</strong></span>
   </div>
 
-  <div class="sh fi" style="margin-top:44px"><div class="sb"></div><h2 class="st">📊 출제 분석</h2><div class="sr"></div></div>
-  <div class="cg fi">
-    <div class="cb">
-      <div class="ct">난이도 분포 (24문항)</div>
+  <!-- 출제 분석 — 차트 3개 -->
+  <div class="sh fi" style="margin-top:44px"><div class="sb"></div><h2 class="st">📊 출제 영역 분석 (100점 기준)</h2><div class="sr"></div></div>
+  <div class="cg3 fi">
+
+    <!-- 차트1: 전체 100점 영역 비중 -->
+    <div class="cb2">
+      <div class="ct">전체 100점 기준 영역별 비중</div>
       <div class="dw">
-        <svg width="110" height="110" viewBox="0 0 110 110">
-          <circle cx="55" cy="55" r="40" fill="none" stroke="#EEF1F5" stroke-width="18"/>
-          <circle cx="55" cy="55" r="40" fill="none" stroke="var(--dl)" stroke-width="18" stroke-dasharray="53 198" stroke-dashoffset="0" transform="rotate(-90 55 55)"/>
-          <circle cx="55" cy="55" r="40" fill="none" stroke="var(--dm)" stroke-width="18" stroke-dasharray="105 146" stroke-dashoffset="-53" transform="rotate(-90 55 55)"/>
-          <circle cx="55" cy="55" r="40" fill="none" stroke="var(--dh)" stroke-width="18" stroke-dasharray="93 158" stroke-dashoffset="-158" transform="rotate(-90 55 55)"/>
-          <text x="55" y="52" text-anchor="middle" font-size="13" font-weight="900" fill="var(--ink)" font-family="Noto Sans KR">24</text>
-          <text x="55" y="65" text-anchor="middle" font-size="9" fill="var(--steel)" font-family="Noto Sans KR">문항</text>
+        <svg width="130" height="130" viewBox="0 0 130 130">
+          <!-- 문법55%, 본문28%, 대화13%, 어휘4% -->
+          <!-- circumference = 2π×46 ≈ 289 -->
+          <!-- 문법: 289*0.55=159, 본문: 289*0.28=81, 대화: 289*0.13=38, 어휘: 289*0.04=12 -->
+          <circle cx="65" cy="65" r="46" fill="none" stroke="#EEF1F5" stroke-width="20"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cg)" stroke-width="20"
+            stroke-dasharray="159 130" stroke-dashoffset="0" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cb)" stroke-width="20"
+            stroke-dasharray="81 208" stroke-dashoffset="-159" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cd)" stroke-width="20"
+            stroke-dasharray="38 251" stroke-dashoffset="-240" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cv)" stroke-width="20"
+            stroke-dasharray="12 277" stroke-dashoffset="-278" transform="rotate(-90 65 65)"/>
+          <text x="65" y="61" text-anchor="middle" font-size="14" font-weight="900" fill="var(--ink)" font-family="Noto Sans KR">100</text>
+          <text x="65" y="75" text-anchor="middle" font-size="9" fill="var(--steel)" font-family="Noto Sans KR">점 기준</text>
         </svg>
         <div class="dl2">
-          <div class="di"><div class="dd" style="background:var(--dh)"></div><span class="dil">고난도 (상)</span><span class="div2">9문 (38%)</span></div>
-          <div class="di"><div class="dd" style="background:var(--dm)"></div><span class="dil">보통 (중)</span><span class="div2">10문 (42%)</span></div>
-          <div class="di"><div class="dd" style="background:var(--dl)"></div><span class="dil">기본 (하)</span><span class="div2">5문 (21%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cg)"></div><span class="dil">문법</span><span class="div2">55점 (55%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cb)"></div><span class="dil">본문</span><span class="div2">28점 (28%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cd)"></div><span class="dil">대화문</span><span class="div2">13점 (13%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cv)"></div><span class="dil">어휘</span><span class="div2">4점 (4%)</span></div>
         </div>
       </div>
     </div>
-    <div class="cb">
-      <div class="ct">출제영역별 문항 수</div>
-      <div class="bc">
-        <div class="br"><span class="bl">본문 독해</span><div class="bb"><div class="bf" style="width:75%;background:var(--at);">9문</div></div><span class="bn">9</span></div>
-        <div class="br"><span class="bl">서답형</span><div class="bb"><div class="bf" style="width:50%;background:var(--aw);">6문</div></div><span class="bn">6</span></div>
-        <div class="br"><span class="bl">문법·어법</span><div class="bb"><div class="bf" style="width:42%;background:var(--ag);">5문</div></div><span class="bn">5</span></div>
-        <div class="br"><span class="bl">대화문</span><div class="bb"><div class="bf" style="width:25%;background:var(--ad);">3문</div></div><span class="bn">3</span></div>
-        <div class="br"><span class="bl">어휘</span><div class="bb"><div class="bf" style="width:8%;background:var(--av);">1문</div></div><span class="bn">1</span></div>
+
+    <!-- 차트2: 선택형 60점 영역 비중 -->
+    <div class="cb2">
+      <div class="ct">선택형 60점 기준 영역별 비중</div>
+      <div class="dw">
+        <svg width="130" height="130" viewBox="0 0 130 130">
+          <!-- 문법30(50%), 본문18(30%), 대화8(13%), 어휘4(7%) -->
+          <circle cx="65" cy="65" r="46" fill="none" stroke="#EEF1F5" stroke-width="20"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cg)" stroke-width="20"
+            stroke-dasharray="145 144" stroke-dashoffset="0" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cb)" stroke-width="20"
+            stroke-dasharray="87 202" stroke-dashoffset="-145" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cd)" stroke-width="20"
+            stroke-dasharray="38 251" stroke-dashoffset="-232" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cv)" stroke-width="20"
+            stroke-dasharray="19 270" stroke-dashoffset="-270" transform="rotate(-90 65 65)"/>
+          <text x="65" y="61" text-anchor="middle" font-size="14" font-weight="900" fill="var(--ink)" font-family="Noto Sans KR">60</text>
+          <text x="65" y="75" text-anchor="middle" font-size="9" fill="var(--steel)" font-family="Noto Sans KR">선택형</text>
+        </svg>
+        <div class="dl2">
+          <div class="di"><div class="dd" style="background:var(--cg)"></div><span class="dil">문법</span><span class="div2">30점 (50%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cb)"></div><span class="dil">본문</span><span class="div2">18점 (30%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cd)"></div><span class="dil">대화문</span><span class="div2">8점 (13%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cv)"></div><span class="dil">어휘</span><span class="div2">4점 (7%)</span></div>
+        </div>
       </div>
     </div>
-    <div class="cb">
-      <div class="ct">문항유형별 배점 (점)</div>
-      <div class="bc">
-        <div class="br"><span class="bl">서답형</span><div class="bb"><div class="bf" style="width:100%;background:var(--aw);">40점</div></div><span class="bn">40</span></div>
-        <div class="br"><span class="bl">4점 × 10문</span><div class="bb"><div class="bf" style="width:80%;background:var(--ag);">32점</div></div><span class="bn">32</span></div>
-        <div class="br"><span class="bl">3점 × 8문</span><div class="bb"><div class="bf" style="width:60%;background:var(--ad);">24점</div></div><span class="bn">24</span></div>
-      </div>
-    </div>
-    <div class="cb">
-      <div class="ct">영역별 배점 비중</div>
-      <div class="bc">
-        <div class="br"><span class="bl">서답형</span><div class="bb"><div class="bf" style="width:100%;background:var(--aw);">40점</div></div><span class="bn">40%</span></div>
-        <div class="br"><span class="bl">본문 독해</span><div class="bb"><div class="bf" style="width:68%;background:var(--at);">27점</div></div><span class="bn">27%</span></div>
-        <div class="br"><span class="bl">문법·어법</span><div class="bb"><div class="bf" style="width:43%;background:var(--ag);">17점</div></div><span class="bn">17%</span></div>
-        <div class="br"><span class="bl">대화문</span><div class="bb"><div class="bf" style="width:25%;background:var(--ad);">10점</div></div><span class="bn">10%</span></div>
-        <div class="br"><span class="bl">어휘</span><div class="bb"><div class="bf" style="width:15%;background:var(--av);">6점</div></div><span class="bn">6%</span></div>
+
+    <!-- 차트3: 서답형 40점 영역 비중 -->
+    <div class="cb2">
+      <div class="ct">서답형 40점 기준 영역별 비중</div>
+      <div class="dw">
+        <svg width="130" height="130" viewBox="0 0 130 130">
+          <!-- 문법25(62.5%), 본문10(25%), 대화5(12.5%), 어휘0 -->
+          <circle cx="65" cy="65" r="46" fill="none" stroke="#EEF1F5" stroke-width="20"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cg)" stroke-width="20"
+            stroke-dasharray="181 108" stroke-dashoffset="0" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cb)" stroke-width="20"
+            stroke-dasharray="72 217" stroke-dashoffset="-181" transform="rotate(-90 65 65)"/>
+          <circle cx="65" cy="65" r="46" fill="none" stroke="var(--cd)" stroke-width="20"
+            stroke-dasharray="36 253" stroke-dashoffset="-253" transform="rotate(-90 65 65)"/>
+          <text x="65" y="61" text-anchor="middle" font-size="14" font-weight="900" fill="var(--ink)" font-family="Noto Sans KR">40</text>
+          <text x="65" y="75" text-anchor="middle" font-size="9" fill="var(--steel)" font-family="Noto Sans KR">서답형</text>
+        </svg>
+        <div class="dl2">
+          <div class="di"><div class="dd" style="background:var(--cg)"></div><span class="dil">문법</span><span class="div2">25점 (62.5%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cb)"></div><span class="dil">본문</span><span class="div2">10점 (25%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cd)"></div><span class="dil">대화문</span><span class="div2">5점 (12.5%)</span></div>
+          <div class="di"><div class="dd" style="background:var(--cv)"></div><span class="dil">어휘</span><span class="div2">0점 (0%)</span></div>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- 종합 난이도 -->
   <div class="dm2 fi">
     <span class="dml">종합 난이도</span>
     <span class="dms">★★★★★</span>
     <span class="dmt">고난도 (5/5)</span>
-    <p class="dmd">관계대명사·used to·so~that·지각동사 등 2학년 고급 문법이 선택형과 서답형 전반에 복합 출제됩니다. 서답형 6문항 40점으로 배점이 높으며, 서1(want+목적어+to·7점)·서2(지하철 노선 영작·10점)·서6(목적격 관계대명사·6점)이 최고 변별 포인트입니다.</p>
+    <p class="dmd">전체 배점의 55%가 문법 영역으로 관계대명사·used to·so~that·지각동사 등 2학년 핵심 문법이 선택형과 서답형 전반에 복합 출제됩니다. 서답형 비중도 40%로 높아 정확한 영작 능력이 필수입니다.</p>
   </div>
 
-  <div class="sh fi"><div class="sb"></div><h2 class="st">🎯 시험 핵심 출제 포인트</h2><div class="sr"></div></div>
+  <!-- 핵심 출제 포인트 -->
+  <div class="sh fi"><div class="sb"></div><h2 class="st">🎯 핵심 출제 포인트</h2><div class="sr"></div></div>
   <div class="pl fi">
 
-    <div class="pc" style="border-left-color:var(--dh)">
-      <div class="pr2" style="background:var(--dh)">1</div>
+    <div class="pc" style="border-left-color:var(--cg)">
+      <div class="pr2" style="background:var(--cg)">문</div>
       <div class="pb">
-        <div class="ptl">관계대명사 어법·영작 (4·서6번) <span class="bdg hi2">★★★ 고난도</span></div>
-        <div class="pde">4번(4점): 어법상 옳지 않은 것 — ③ The teacher <u>who our class invited</u> her was very kind. (목적격 관계대명사 who → whom, 또는 her 삭제)<br>
-        서6[6점]: 목적격 관계대명사 사용하여 두 문장을 한 문장으로.<br>
-        The painting won first prize. + Many students looked at the painting carefully.<br>
-        → <em>The painting that/which many students looked at carefully won first prize.</em><br>
-        목적격 관계대명사 that/which 사용 + 두 문장 합치기 조건 필수.</div>
-      </div>
-    </div>
-
-    <div class="pc" style="border-left-color:var(--dh)">
-      <div class="pr2" style="background:var(--dh)">2</div>
-      <div class="pb">
-        <div class="ptl">서2 — 지하철 노선 영작 (10점) <span class="bdg hi2">★★★ 고난도</span></div>
-        <div class="pde">장전중→광안리해수욕장 가는 방법 지문을 읽고 두 밑줄 부분 영작 각 5점.<br>
-        (1) ㉮ 3호선으로 갈아탄 후 수영역에서 내려: <em>Take Line 3 to Yeonsan Station and get off at Suyeong Station.</em><br>
-        (조건: 지하철 역 이름은 예시처럼 Yeonsan Station 형식으로 쓸 것)<br>
-        (2) ㉯ 1시간 조금 넘게 걸릴 거야: <em>It will take a little more than an hour.</em><br>
-        (조건: 'a little' 사용하여 완전한 문장으로)</div>
-      </div>
-    </div>
-
-    <div class="pc" style="border-left-color:var(--dh)">
-      <div class="pr2" style="background:var(--dh)">3</div>
-      <div class="pb">
-        <div class="ptl">어법 식별 (5·14·16·18번) <span class="bdg hi2">★★★ 고난도</span></div>
-        <div class="pde">5번(4점): 거리예술 지문 어법상 옳은 것 — ② ⓑ (ⓐ make→makes / ⓒ hippest→hippiest / ⓓ 어법 오류 / ⓔ represents→represent 오류)<br>
-        14번(4점): Schofield 지문 어법상 옳은 것 — ② ⓑ (ⓐ similarly→similar / ⓒ teaching→teach / ⓔ have→has 오류)<br>
-        16번(4점): 지각동사 어법상 옳은 것 2개 — ① ③ (① knocking ✅ / ③ cross ✅)<br>
-        18번(4점): Schofield 지문 밑줄 어법 옳은 것 — ③ ⓒ</div>
-      </div>
-    </div>
-
-    <div class="pc" style="border-left-color:var(--dh)">
-      <div class="pr2" style="background:var(--dh)">4</div>
-      <div class="pb">
-        <div class="ptl">서1 — want + 목적어 + to부정사 영작 (7점) <span class="bdg hi2">★★★ 고난도</span></div>
-        <div class="pde">Banksy 거리예술 지문 밑줄 ㉯의 우리말과 뜻이 일치하도록 조건 영작 [7점].<br>
-        우리말: 사람들은 Banksy가 우리로 하여금 자연을 더 잘 보살피기를 원한다고 생각한다.<br>
-        조건: take better care of 사용 + want + 목적어 + to부정사 구문<br>
-        → <em>People think that Banksy wants us to take better care of nature.</em></div>
-      </div>
-    </div>
-
-    <div class="pc" style="border-left-color:var(--dm)">
-      <div class="pr2" style="background:var(--dm)">5</div>
-      <div class="pb">
-        <div class="ptl">used to / so~that (9·서4번) <span class="bdg mi">★★☆ 보통</span></div>
-        <div class="pde">9번(4점): used to 쓸 수 없는 것 2개 — ③④ (③ 현재 사실·상태에는 used to 불가 / ④ There used to는 불규칙 상황 불가)<br>
-        서4[6점]: so~that 구문 조건 영작 — 현재 시제·so~that 구문 활용<br>
-        → <em>The movie was so interesting that I want to watch it again.</em></div>
-      </div>
-    </div>
-
-    <div class="pc" style="border-left-color:var(--at)">
-      <div class="pr2" style="background:var(--at)">6</div>
-      <div class="pb">
-        <div class="ptl">주요 독해 지문 4종 <span class="bdg txt">본문</span></div>
+        <div class="ptl">문법 (55점) — 관계대명사·used to·so~that·지각동사 <span class="bdg hi2">★★★ 고난도</span></div>
         <div class="pde">
-          ① <strong>길 안내 대화·거리예술 (1~6번·서1)</strong> — 대화 어법·London 거리예술(STIK·Banksy), 내용일치·어법·want+목+to 영작<br>
-          ② <strong>껌 그림·지하철 (7~10번·서2)</strong> — 의미 다른 것·CANNOT·영영풀이·대화 배열·지하철 노선 영작<br>
-          ③ <strong>Audrey Hepburn 대화·Schofield (11~15번·서3)</strong> — 내용일치·어법·의문문 영작<br>
-          ④ <strong>Schofield 독립운동 (15~18번·서4·5)</strong> — CANNOT·어법·지각동사·so~that 영작
+          <strong>관계대명사</strong>: 4번(목적격 관계대명사 + her 중복 오류) / 서6(목적격 관계대명사로 두 문장 합치기)<br>
+          <strong>used to</strong>: 9번(쓸 수 없는 것 2개 — 현재 상태·There used to 불가)<br>
+          <strong>지각동사</strong>: 16번(knocking·cross 어법) / 서5(train + their coach 영작)<br>
+          <strong>so~that</strong>: 7번(의미 비교) / 서4(so interesting that 영작)<br>
+          <strong>want+목+to</strong>: 서1(Banksy 지문 want us to take better care of nature)
         </div>
       </div>
     </div>
 
+    <div class="pc" style="border-left-color:var(--cb)">
+      <div class="pr2" style="background:var(--cb)">본</div>
+      <div class="pb">
+        <div class="ptl">본문 (28점) — 거리예술·Schofield·껌 그림 지문 <span class="bdg mi">★★☆ 보통</span></div>
+        <div class="pde">
+          <strong>London 거리예술</strong> (5~6번): STIK·Banksy 어법·내용일치<br>
+          <strong>껌 그림·Ben Wilson</strong> (8·10번): CANNOT·대화 배열<br>
+          <strong>Dr. Schofield</strong> (13~15·17·18번): 내용일치·어법·CANNOT<br>
+          <strong>서2</strong>: 지하철 노선 영작 — Take Line 3, get off at Suyeong Station / It will take a little more than an hour.
+        </div>
+      </div>
+    </div>
+
+    <div class="pc" style="border-left-color:var(--cd)">
+      <div class="pr2" style="background:var(--cd)">대</div>
+      <div class="pb">
+        <div class="ptl">대화문 (13점) — 길 안내·추천 대화 <span class="bdg lo">★☆☆ 기본</span></div>
+        <div class="pde">
+          <strong>1번</strong>: 해석 판단 / <strong>2번</strong>: 대화 어법상 어색한 것 / <strong>3번</strong>: 세빗공원 대화 내용 일치<br>
+          <strong>서3</strong>: 밑줄 ㉮ 의문문 영작 (else·for 활용) — Can you recommend someone else for me?
+        </div>
+      </div>
+    </div>
+
+    <div class="pc" style="border-left-color:var(--cv)">
+      <div class="pr2" style="background:var(--cv)">어</div>
+      <div class="pb">
+        <div class="ptl">어휘 (4점) — 영영풀이 <span class="bdg lo">★☆☆ 기본</span></div>
+        <div class="pde"><strong>11번</strong>: "the group of people who officially control a country" = government</div>
+      </div>
+    </div>
+
   </div>
 
+  <!-- 문항별 상세 분석 -->
   <div class="sh fi"><div class="sb"></div><h2 class="st">📋 문항별 상세 분석</h2><div class="sr"></div></div>
   <div class="tw fi">
     <table>
       <thead>
         <tr>
-          <th>번호</th><th>배점</th><th>난이도</th><th>출제영역</th>
+          <th>번호</th><th>배점</th><th>난이도</th><th>영역</th>
           <th style="text-align:left">출제 포인트 및 정답</th>
         </tr>
       </thead>
@@ -288,61 +306,70 @@ td:first-child{padding-left:16px}
     </table>
   </div>
 
+  <!-- 학습 대응 전략 -->
   <div class="sh fi"><div class="sb"></div><h2 class="st">✅ 학습 대응 전략</h2><div class="sr"></div></div>
   <div class="db fi">
-    <p>장전중학교 2학년 2학기 중간고사는 <strong>서답형 6문항 40점 + 선택형 4점 문항 10개(40점)</strong>으로 최고 수준 시험입니다. 관계대명사·used to·so~that·지각동사 등 2학년 고급 문법이 복합 출제되며, 서2(지하철 노선 영작·10점)와 서6(목적격 관계대명사·6점)이 가장 어렵고 배점이 높습니다.</p>
+    <p>전체 배점의 <strong>55%가 문법, 28%가 본문</strong>으로 구성됩니다. 선택형·서답형 모두 문법 비중이 가장 높아 관계대명사·used to·지각동사·so~that의 정확한 이해와 영작이 핵심입니다. 본문 지문의 단어와 문장 해석을 탄탄히 한 후 서답형 영작으로 연결하는 학습이 효과적입니다.</p>
   </div>
 
   <div class="stc fi" style="margin-bottom:16px">
-    <div class="sth" style="background:var(--dh)">🔴 단기 집중 — 1개월 플랜 <span style="font-size:11px;font-weight:400;opacity:.85">(서답형 40점 공략)</span></div>
+    <div class="sth" style="background:var(--dh)">🔴 단기 집중 — 1개월 플랜 (본문 단어·해석·영작 위주)</div>
     <div class="stb">
       <div class="si2">
         <div class="si" style="border-right:1px solid var(--panel)">
           <div class="sii" style="background:var(--dh)">1주</div>
-          <div class="sit"><strong>관계대명사 목적격 (서6·4번)</strong><br>주격(who/which) vs 목적격(whom/which/that) 구분. 두 문장 합치기 20문장. 서6 기출 반복.</div>
+          <div class="sit"><strong>7과 단어 암기</strong><br>세계 축제 지문 핵심 어휘 암기 — celebrate / symbolize / decorate / statue / parade / ancestor / altar / cemetery / skeleton / costume / reindeer / traditional 등 문맥 속 의미 확인.</div>
         </div>
         <div class="si">
           <div class="sii" style="background:var(--dh)">1주</div>
-          <div class="sit"><strong>want + 목적어 + to부정사 (서1)</strong><br>want/ask/tell + 목적어 + to V 패턴 20문장. Banksy 지문 서1 기출 반복. take better care of 관용 표현 암기.</div>
+          <div class="sit"><strong>7과 본문 해석</strong><br>Fallas(스페인)·Day of the Dead(멕시코)·Midsummer(스웨덴)·Fur Rondy(알래스카) 4개 지문 전체 문장 우리말 해석. 각 축제의 특징·날짜·행사 내용 정리.</div>
         </div>
         <div class="si" style="border-right:1px solid var(--panel)">
           <div class="sii" style="background:var(--dh)">2주</div>
-          <div class="sit"><strong>used to / so~that (9번·서4)</strong><br>used to + 동사원형(과거 습관) vs be used to + -ing(익숙함) 구분. so + 형용사 + that절 영작 훈련.</div>
+          <div class="sit"><strong>8과 단어 암기</strong><br>A Sound of Thunder 지문 핵심 어휘 — prehistoric / dinosaur / cautious / foolish / terrified / path / butterfly / election / confuse / roar / mud 등 이야기 흐름 속 의미 확인.</div>
         </div>
         <div class="si">
           <div class="sii" style="background:var(--dh)">2주</div>
-          <div class="sit"><strong>지각동사 어법 (16번·서5)</strong><br>see/hear/watch + 목적어 + 동사원형/현재분사 구분. 서5 기출 — train+their coach 조건 영작 반복.</div>
+          <div class="sit"><strong>8과 본문 해석</strong><br>시간 여행 사무실 → 공룡 정글 → Eckels 이탈 → 현재 귀환 → 나비 발견까지 전체 스토리 흐름 해석. 관계대명사·used to·지각동사 출제 문장 집중 반복.</div>
         </div>
         <div class="si" style="border-right:1px solid var(--panel)">
           <div class="sii" style="background:var(--dh)">3주</div>
-          <div class="sit"><strong>서2 지하철 노선 영작</strong><br>길 안내 표현 — take Line N / get off at Station / transfer to 패턴. a little more than 표현 암기. 조건(역 이름 형식) 체크 훈련.</div>
+          <div class="sit"><strong>7·8과 핵심 문장 영작</strong><br>각 과에서 관계대명사·so~that·지각동사·want+목+to가 포함된 대표 문장 5개씩 영작 훈련. 교과서 본문 문장 빈칸 채우기 반복.</div>
         </div>
         <div class="si">
-          <div class="sii" style="background:var(--dh)">3주</div>
-          <div class="sit"><strong>어법 식별 집중 (5·14·18번)</strong><br>관계대명사·used to·지각동사·so~that 어법 오류 패턴. 4점 고난도 문항 유사 기출 주 3회 반복.</div>
-        </div>
-        <div class="si" style="border-right:1px solid var(--panel);border-bottom:none">
-          <div class="sii" style="background:var(--dh)">4주</div>
-          <div class="sit"><strong>모의 서답형 실전 테스트</strong><br>서1~6 시간 제한 풀이 (30분). 조건 체크리스트 먼저 확인 후 작성. 목표: 서답형 36점 이상.</div>
-        </div>
-        <div class="si" style="border-bottom:none">
-          <div class="sii" style="background:var(--dh)">4주</div>
-          <div class="sit"><strong>독해 지문 4종 완전 분석</strong><br>London 거리예술·껌 그림·Schofield 독립운동 지문 내용일치·CANNOT·대화 배열 유형 반복.</div>
+          <div class="sii" style="background:var(--dh)">3~4주</div>
+          <div class="sit"><strong>서답형 영작 실전</strong><br>7·8과 본문 내용 기반 서답형 조건 영작 반복. 조건(시제·단어 수·특정 구문) 체크 후 작성 습관화. 목표: 서답형 34점 이상.</div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="stc fi">
-    <div class="sth" style="background:var(--dl)">🟢 중장기 보완 — 1년 플랜 <span style="font-size:11px;font-weight:400;opacity:.85">(3학년 고급 문법 대비)</span></div>
+    <div class="sth" style="background:var(--dl)">🟢 장기 플랜 — 2학년 문법 숙지 + 예문 영작</div>
     <div class="stb">
       <div class="yg">
-        <div class="yc" style="border-top:3px solid var(--dl)"><div class="ym" style="color:var(--dl)">1~3개월</div><div class="ytl">기말 문법 완성</div><div class="yd">관계대명사·used to·so~that·지각동사 완전 습득. 매주 2구문 + 조건 영작 10문장.</div></div>
-        <div class="yc" style="border-top:3px solid var(--at)"><div class="ym" style="color:var(--at)">4~6개월</div><div class="ytl">복합 조건 영작</div><div class="yd">관계대명사 + want+to 결합 복합 영작 주 3회. 어법 오류 2개 이상 식별 훈련 강화.</div></div>
-        <div class="yc" style="border-top:3px solid var(--ag)"><div class="ym" style="color:var(--ag)">7~9개월</div><div class="ytl">3학년 문법 선행</div><div class="yd">분사구문·It~that 강조·사역동사·since 등 3학년 핵심 문법 선행. 고급 어법 오류 식별 훈련.</div></div>
-        <div class="yc" style="border-top:3px solid var(--slate)"><div class="ym" style="color:var(--slate)">10~12개월</div><div class="ytl">고등 영어 대비</div><div class="yd">고1 영어 교과서 핵심 단원 예습. 수능형 독해·서술형 기초 훈련. 고등 내신 서답형 적응.</div></div>
+        <div class="yc" style="border-top:3px solid var(--dl)">
+          <div class="ym" style="color:var(--dl)">현재 ~ 기말</div>
+          <div class="ytl">2학년 핵심 문법 완성</div>
+          <div class="yd">관계대명사(주격·목적격)·used to·지각동사·so~that 각 문법별 예문 10문장 외우기. 오류 유형 정리 노트 작성.</div>
+        </div>
+        <div class="yc" style="border-top:3px solid var(--cb)">
+          <div class="ym" style="color:var(--cb)">기말 이후</div>
+          <div class="ytl">2학년 전 범위 예문 영작</div>
+          <div class="yd">2학년 전체 문법(관계대명사·수동태·분사·접속사 등) 단원별 대표 예문 영작. 문법별 3~5문장씩 조건 없이 자유 영작.</div>
+        </div>
+        <div class="yc" style="border-top:3px solid var(--cg)">
+          <div class="ym" style="color:var(--cg)">3학년 대비</div>
+          <div class="ytl">3학년 문법 예습 + 예문 영작</div>
+          <div class="yd">분사구문·It~that 강조·사역동사·since 등 3학년 핵심 문법을 예문 중심으로 선행 학습. 교과서 본문 문장 영작.</div>
+        </div>
+        <div class="yc" style="border-top:3px solid var(--slate)">
+          <div class="ym" style="color:var(--slate)">고등 대비</div>
+          <div class="ytl">중학 전 범위 정리 + 고등 예문</div>
+          <div class="yd">중학교 전체 문법 핵심 예문 총정리. 고등 교과서 기본 문장 해석 및 영작으로 전환. 서술형 조건 영작 반복.</div>
+        </div>
       </div>
-      <div class="gb"><span style="font-size:12px;font-weight:700;color:var(--dl)">🎯 1년 후 목표 &nbsp;</span><span style="font-size:12px;color:var(--steel)">서답형 38점 이상 + 4점 선택형 만점 → 총점 95점 이상. 관계대명사·used to·지각동사·so~that을 복합 조건 하에서도 오류 없이 영작. 3학년 영어 내신 및 고등 영어 기초 완성.</span></div>
+      <div class="gb"><span style="font-size:12px;font-weight:700;color:var(--dl)">🎯 목표 &nbsp;</span><span style="font-size:12px;color:var(--steel)">2학년 핵심 문법을 예문과 함께 완전히 숙지하고, 서답형 조건 영작을 자유롭게 작성할 수 있는 수준 달성.</span></div>
     </div>
   </div>
 
@@ -350,61 +377,72 @@ td:first-child{padding-left:16px}
 
 <footer class="ft">
   <div class="fti">
-    <div class="ftl">영어쑥쑥어학원</div>
-    <div class="fts">장전중학교 2학년 영어 | 2026학년도 2학기 중간고사 분석 리포트<br>본 자료의 저작권은 영어쑥쑥어학원에 있습니다.</div>
+    <div class="ftl">라이징영어학원</div>
+    <div class="fts">장전중학교 2학년 영어 | 2026학년도 2학기 중간고사 분석 리포트<br>본 자료의 저작권은 라이징영어학원에 있습니다.</div>
   </div>
 </footer>
 
 <script>
 const Q=[
-  [1,3,'중','문법','영어 문장과 우리말 해석 일치 — ② Police searched the area for clues. → 경찰이 단서를 찾아 그 지역을 수색했다.'],
-  [2,3,'중','대화문','밑줄 (A)~(E) 대화 흐름상 어색한 것 — ① (A) Do you need help? (길 안내 요청 맥락에 맞는 표현)'],
-  [3,3,'하','대화문','세빗공원 대화 내용 일치 — ④ Liam is going to Sebit Park this Saturday to see an art fair.'],
-  [4,4,'상','문법','어법상 옳지 않은 것 — ③ The teacher who our class invited her was very kind. (목적격 관계대명사 + her 중복 오류)'],
-  [5,4,'상','문법','거리예술 지문 어법상 옳은 것 — ② ⓑ (ⓐ make→makes / ⓒ hippest→hippiest / ⓔ represents→represent 오류)'],
-  [6,3,'중','본문','거리예술 지문 내용 일치 — ④ The three figures in STIK\'s painting stand for the past, present, and future of Shoreditch.'],
-  [7,3,'중','문법','나머지 문장과 의미가 다른 것 — ② The box was very heavy, but I could lift it. (역접 but → 나머지는 모두 들 수 없었다는 의미)'],
-  [8,3,'하','본문','Wilson 껌 그림 지문 대답할 수 있는 질문 — ⑤ What kinds of messages do Wilson\'s gum paintings often carry? (personal messages from people he meets)'],
-  [9,4,'상','문법','used to 쓸 수 없는 것 2개 — ③④ (③ 현재 상태 enjoy / ④ There used to 불가)'],
-  [10,3,'중','본문','두 대화 자연스럽게 완성 배열 — ② (B)-(D)-(A)-(C)'],
-  [11,4,'상','어휘','영영풀이 "the group of people who officially control a country" — ④ government'],
-  [12,3,'하','대화문','대화 내용 일치 — ① Liam helps Somi choose Audrey Hepburn for her essay.'],
-  [13,3,'중','본문','Schofield 지문 내용 일치 — ② ⓑ he first come to Korea in 1916 (come→came 오류)'],
-  [14,4,'상','문법','Schofield 지문 어법상 옳은 것 — ② ⓑ he first came to Korea in 1916 ✅'],
-  [15,3,'중','본문','2월 28일 대화 내용 질문 답 — ② To ask him to let the world know about the event through his pictures.'],
-  [16,4,'상','문법','어법상 옳은 것 2개 — ① ③ (① knocking 지각동사 현재분사 ✅ / ③ cross 지각동사 동사원형 ✅)'],
-  [17,3,'중','본문','Schofield 지문 대답할 수 없는 질문 — ③ Where did Dr. Schofield live in Canada? (캐나다 거주지 미언급)'],
-  [18,4,'상','문법','Schofield 지문 밑줄 어법상 옳은 것 — ③ ⓒ to write (계속해서 ~하다 = continue to write ✅)'],
-  ['서1',7,'상','서답형','Banksy 지문 밑줄 ㉯ want+목적어+to 영작 [7점]: People think that Banksy wants us to take better care of nature.'],
-  ['서2',10,'상','서답형','지하철 노선 영작 (각 5점):\n(1) ㉮: Take Line 3 to Yeonsan Station and get off at Suyeong Station.\n(2) ㉯: It will take a little more than an hour.'],
-  ['서3',5,'중','서답형','밑줄 ㉮ else+for 의문문 영작: Can you recommend someone else for me?'],
-  ['서4',6,'중','서답형','so~that 조건 영작 (현재시제): The movie was so interesting that I want to watch it again.'],
-  ['서5',6,'상','서답형','지각동사 영작 (train+their coach 활용): The basketball players trained under the watchful eye of their coach.'],
-  ['서6',6,'상','서답형','목적격 관계대명사로 두 문장 합치기: The painting that/which many students looked at carefully won first prize.'],
+  [1,3,'문법','해석 판단','영어 문장 우리말 해석 일치 — ② Police searched the area for clues.'],
+  [2,3,'대화문','대화 어법','밑줄 (A)~(E) 흐름상 어색한 것 — ① (A) Do you need help? (맥락 불일치)'],
+  [3,3,'대화문','내용 일치','세빗공원 대화 내용 일치 — ④ Liam is going to Sebit Park this Saturday to see an art fair.'],
+  [4,4,'문법','관계대명사','어법상 옳지 않은 것 — ③ who our class invited her (목적격 관계대명사 + her 중복 오류)'],
+  [5,4,'문법','어법 식별','거리예술 지문 어법상 옳은 것 — ② ⓑ (ⓐ make→makes / ⓔ represents→represent 오류)'],
+  [6,3,'본문','내용 일치','거리예술 내용 일치 — ④ STIK 세 인물 = Shoreditch의 과거·현재·미래'],
+  [7,3,'문법','so~that','나머지와 의미가 다른 것 — ② 역접 but (나머지는 모두 "들 수 없었다")'],
+  [8,3,'본문','CANNOT','껌 그림 지문 대답할 수 있는 질문 — ⑤ What kinds of messages do Wilson\'s gum paintings often carry?'],
+  [9,4,'문법','used to','used to 쓸 수 없는 것 2개 — ③④ (③ 현재 상태 / ④ There used to 불가)'],
+  [10,3,'본문','대화 배열','대화 자연스럽게 완성 배열 — ② (B)-(D)-(A)-(C)'],
+  [11,4,'어휘','영영풀이','영영풀이 "the group of people who officially control a country" — ④ government'],
+  [12,2,'대화문','내용 일치','대화 내용 일치 — ① Liam helps Somi choose Audrey Hepburn for her essay.'],
+  [13,3,'본문','내용 일치','Schofield 지문 내용 일치 — ② ⓑ (came to Korea 시제 오류)'],
+  [14,4,'문법','어법 식별','Schofield 지문 어법상 옳은 것 — ② ⓑ he first came to Korea in 1916 ✅'],
+  [15,3,'본문','내용 일치','2월 28일 대화 질문 답 — ② To let the world know about the event through his pictures.'],
+  [16,4,'문법','지각동사','어법상 옳은 것 2개 — ①③ (① knocking ✅ / ③ cross ✅)'],
+  [17,3,'본문','CANNOT','Schofield 지문 대답할 수 없는 질문 — ③ Where did Dr. Schofield live in Canada?'],
+  [18,4,'문법','어법 식별','Schofield 지문 밑줄 어법상 옳은 것 — ③ ⓒ to write ✅'],
+  ['서1',7,'문법','want+목+to 영작','People think that Banksy wants us to take better care of nature.'],
+  ['서2',10,'본문','지하철 노선 영작','(1) Take Line 1 to Yeonsan Station. Transfer to Line 3 and get off at Suyeong Station.\n(2) It will take a little more than an hour.'],
+  ['서3',5,'대화문','의문문 영작','Can you recommend someone else for me?'],
+  ['서4',6,'문법','so~that 영작','The movie was so interesting that I wanted to watch it again.'],
+  ['서5',6,'문법','지각동사 영작','The basketball players trained under the watchful eye of their coach.'],
+  ['서6',6,'문법','관계대명사 영작','The painting that/which many students looked at carefully won first prize.'],
 ];
 
-const DM={'상':{c:'hi2',l:'상 ★★★'},'중':{c:'mi',l:'중 ★★☆'},'하':{c:'lo',l:'하 ★☆☆'}};
-const AM={'대화문':'dia','본문':'txt','어휘':'voc','문법':'grm','서답형':'wrt'};
+const DM={'문법':{c:'grm',l:'문법'},'본문':{c:'txt',l:'본문'},'대화문':{c:'dia',l:'대화문'},'어휘':{c:'voc',l:'어휘'}};
+const DIFF={'문법':'mi','본문':'mi','대화문':'lo','어휘':'lo'};
+// 고난도 overrides
+const HDIFF={4:'hi2',5:'hi2',9:'hi2',14:'hi2',16:'hi2',18:'hi2','서1':'hi2','서2':'hi2','서5':'hi2','서6':'hi2'};
+const HDIFF_L={4:'상★★★',5:'상★★★',9:'상★★★',14:'상★★★',16:'상★★★',18:'상★★★','서1':'상★★★','서2':'상★★★','서5':'상★★★','서6':'상★★★'};
 
 const tb=document.getElementById('qt');
-Q.forEach(([n,p,d,a,pt])=>{
+Q.forEach(([n,p,area,sub,pt])=>{
   const iw=typeof n==='string';
-  const dm=DM[d],ac=AM[a]||'txt';
+  const am=DM[area]||{c:'txt',l:area};
+  const dc=HDIFF[n]||(iw?'mi':DIFF[area])||'mi';
+  const dl=HDIFF_L[n]||(dc==='mi'?'중★★☆':'하★☆☆');
   const tr=document.createElement('tr');
   if(iw)tr.className='wr';
   tr.innerHTML=`
     <td><span class="nb ${iw?'w':''}">${n}</span></td>
     <td style="text-align:center;font-weight:700">${p}점</td>
-    <td style="text-align:center"><span class="bdg ${dm.c}">${dm.l}</span></td>
-    <td style="text-align:center"><span class="bdg ${ac}">${a}</span></td>
-    <td class="pt">${pt}</td>`;
+    <td style="text-align:center"><span class="bdg ${dc}">${dl}</span></td>
+    <td style="text-align:center"><span class="bdg ${am.c}">${am.l}</span></td>
+    <td class="pt"><strong style="color:var(--ink)">${sub}</strong> — ${pt}</td>`;
   tb.appendChild(tr);
 });
 
 const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis');});},{threshold:0.08});
 document.querySelectorAll('.fi').forEach(el=>obs.observe(el));
 window.addEventListener('load',()=>{
-  document.querySelectorAll('.bf').forEach(f=>{const w=f.style.width;f.style.width='0';setTimeout(()=>{f.style.width=w;},200);});
+  // animate donut charts
+  document.querySelectorAll('circle[stroke-dasharray]').forEach(c=>{
+    const da=c.getAttribute('stroke-dasharray');
+    c.setAttribute('stroke-dasharray','0 289');
+    setTimeout(()=>c.setAttribute('stroke-dasharray',da),300);
+    c.style.transition='stroke-dasharray 1.2s ease';
+  });
 });
 </script>
 </body>
