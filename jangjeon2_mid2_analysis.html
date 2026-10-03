@@ -264,7 +264,7 @@ td:first-child{padding-left:16px}
         <div class="ptl">본문 (28점) — 거리예술·Schofield·껌 그림 지문 <span class="bdg mi">★★☆ 보통</span></div>
         <div class="pde">
           <strong>London 거리예술</strong> (5~6번): STIK·Banksy 어법·내용일치<br>
-          <strong>껌 그림·Ben Wilson</strong> (8·10번): CANNOT·대화 배열<br>
+          <strong>껌 그림·Ben Wilson</strong> (10번): 대답할 수 있는 질문 — Wilson의 껌 그림이 담는 메시지 종류<br>
           <strong>Dr. Schofield</strong> (13~15·17·18번): 내용일치·어법·CANNOT<br>
           <strong>서2</strong>: 지하철 노선 영작 — Take Line 3, get off at Suyeong Station / It will take a little more than an hour.
         </div>
@@ -385,27 +385,27 @@ td:first-child{padding-left:16px}
 <script>
 const Q=[
   [1,3,'문법','해석 판단','영어 문장 우리말 해석 일치 — ② Police searched the area for clues.'],
-  [2,3,'대화문','대화 어법','밑줄 (A)~(E) 흐름상 어색한 것 — ① (A) Do you need help? (맥락 불일치)'],
+  [2,3,'대화문','대화 어법','밑줄 (A)~(E) 흐름상 어색한 것 — ⑤ (E) Take bus No. 12. (How long will it take by bus?로 소요 시간을 물었는데 버스 번호를 알려주는 대답이므로 어색)'],
   [3,3,'대화문','내용 일치','세빗공원 대화 내용 일치 — ④ Liam is going to Sebit Park this Saturday to see an art fair.'],
   [4,4,'문법','관계대명사','어법상 옳지 않은 것 — ③ who our class invited her (목적격 관계대명사 + her 중복 오류)'],
-  [5,4,'문법','어법 식별','거리예술 지문 어법상 옳은 것 — ② ⓑ (ⓐ make→makes / ⓔ represents→represent 오류)'],
-  [6,3,'본문','내용 일치','거리예술 내용 일치 — ④ STIK 세 인물 = Shoreditch의 과거·현재·미래'],
+  [5,4,'문법','어법 식별','거리예술 지문 어법상 옳은 것 — ③ ⓒ (ⓐ make→makes / ⓑ 관계사절 어법 오류 / ⓓ 어법 오류 / ⓔ represents→represent 오류)'],
+  [6,3,'본문','내용 일치','거리예술 내용 일치 — ① Modern street art takes various forms. ✅'],
   [7,3,'문법','so~that','나머지와 의미가 다른 것 — ② 역접 but (나머지는 모두 "들 수 없었다")'],
   [8,3,'본문','CANNOT','껌 그림 지문 대답할 수 있는 질문 — ⑤ What kinds of messages do Wilson\'s gum paintings often carry?'],
-  [9,4,'문법','used to','used to 쓸 수 없는 것 2개 — ③④ (③ 현재 상태 / ④ There used to 불가)'],
-  [10,3,'본문','대화 배열','대화 자연스럽게 완성 배열 — ② (B)-(D)-(A)-(C)'],
+  [9,4,'문법','used to','used to 쓸 수 없는 것 2개 — ①④ (① 현재 사실 has long hair 상태 / ④ There used to 불가)'],
+  [10,3,'본문','대답 가능 질문','껌 그림 지문 대답할 수 있는 질문 — ⑤ What kinds of messages do Wilson\'s gum paintings often carry?'],
   [11,4,'어휘','영영풀이','영영풀이 "the group of people who officially control a country" — ④ government'],
-  [12,2,'대화문','내용 일치','대화 내용 일치 — ① Liam helps Somi choose Audrey Hepburn for her essay.'],
-  [13,3,'본문','내용 일치','Schofield 지문 내용 일치 — ② ⓑ (came to Korea 시제 오류)'],
-  [14,4,'문법','어법 식별','Schofield 지문 어법상 옳은 것 — ② ⓑ he first came to Korea in 1916 ✅'],
+  [12,2,'본문','대화 배열','대화 (A)~(D) 자연스럽게 완성 — ② (B)-(D)-(A)-(C)'],
+  [13,3,'대화문','내용 일치','대화 내용 일치 — ① Liam helps Somi choose Audrey Hepburn for her essay.'],
+  [14,4,'문법','어법 식별','Schofield 지문 어법상 옳은 것 — ④ ⓓ He studied so hard that he was able to teach in Korean ✅'],
   [15,3,'본문','내용 일치','2월 28일 대화 질문 답 — ② To let the world know about the event through his pictures.'],
   [16,4,'문법','지각동사','어법상 옳은 것 2개 — ①③ (① knocking ✅ / ③ cross ✅)'],
   [17,3,'본문','CANNOT','Schofield 지문 대답할 수 없는 질문 — ③ Where did Dr. Schofield live in Canada?'],
   [18,4,'문법','어법 식별','Schofield 지문 밑줄 어법상 옳은 것 — ③ ⓒ to write ✅'],
-  ['서1',7,'문법','want+목+to 영작','People think that Banksy wants us to take better care of nature.'],
-  ['서2',10,'본문','지하철 노선 영작','(1) Take Line 1 to Yeonsan Station. Transfer to Line 3 and get off at Suyeong Station.\n(2) It will take a little more than an hour.'],
+  ['서1',7,'문법','want+목+to 영작','They think Banksy wants us to take better care of the nature.'],
+  ['서2',10,'본문','지하철 노선 영작','(1) Transfer to Line 3 and get off at Suyeong Station.\n(2) It will take a little more than an hour.'],
   ['서3',5,'대화문','의문문 영작','Can you recommend someone else for me?'],
-  ['서4',6,'문법','so~that 영작','The movie was so interesting that I wanted to watch it again.'],
+  ['서4',6,'문법','so~that 영작','This movie is so interesting that I want to watch it again.'],
   ['서5',6,'문법','지각동사 영작','The basketball players trained under the watchful eye of their coach.'],
   ['서6',6,'문법','관계대명사 영작','The painting that/which many students looked at carefully won first prize.'],
 ];
